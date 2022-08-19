@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="icon" type="/image/x-icon" href="images/fr-logo.ico">
+  <meta property="og:title" content="Fiches Résumés - Arlequiin" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://fiches-resume.arlequiin.repl.co" />
+<meta property="og:image" content="http://my.site.com/images/thumb.png" />
+<meta property="og:description" content="Fiche résumé sur les fonctions polynôme du second degré, Partie 1" />
+<meta name="theme-color" content="#DEDDAB">
+<meta property="og:site_name" content="Mohamed Badr Benchekroun">
+</head>
+<body>
+  <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="/index.html">Page de garde</a>
+    <a href="/maths.html">Maths</a>
+    <a href="/spc.html">Physique-Chimie</a>
+    <a href="/svt.html">S.V.T</a>
+    <a href="/nsi.html">N.S.I</a>
+    <a href="/fr.html">Français</a>
+    <a href="/bac.html">Calcul des notes</a>
+  </div>
+
+</div>
+<div id="evaluate" class="evaluate">
+<a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
+<br>
+<br>
+<center><zelda>TIME TO PAIN</zelda></center>
+<br>
+<a id="maintxt">Saisis le texte de la fiche (après l'avoir appris bien-entendu) pour t'évaluer.<br> Vise le score le plus haut!<br>IMPORTANT : Ne pouvant pas écrire les divisions telles qu'elles, vous devrez écrire avec la <a href="nsi.html">syntaxe python</a> du site, largement inspirée de la syntaxe de langages de programmation</a>
+<center><textarea placeholder="Les fautes font baisser des points!" id="textarea"></textarea></center>
+<script>
+  document.getElementById("textarea").style.width = "90%";
+  document.getElementById("textarea").style.height = "300px";
+</script>
+<button onclick="Compare_txt(gettext(),fiches.maths[0])" class="button-54">Vérifier</button>
+</div>
+<span onclick="openNav()" class="open">☰</span><h1>Mathématiques - Fonctions Polynômes du second degré (1)</h1><br>
+<a href="/maths.html" class="previous round">&#8249; Précédent</a>
+<a href="2.html" class="next round">Suivant &#8250;</a><br>
+<span onclick="print()"><h2>Imprimer cette page</h2></span><br>
+<a href="python.html"><h2>Python</h2><annotation>(Cliquer sur ce titre pour être redirigé vers l'éditeur de code Python du site)</annotation></a><br>
+<div class="info">C'est la deuxième fiche de la section maths, elle est sur les fonctions polynôme de second degré. Si vous souhaitez accéder au sommaire cliquez <gras><a href="sommaire.html">ici</a></gras><br></div>
+<div class="warn"><gras>Attention : </gras>Ce chapitre nécessite des connaissances en fonctions</div>
+<div class="check">S'éxercer régulièrement est la clé de la réussite</div>
+<span onclick="openEv()"><h2>Résoudre une équation du second degré</h2><annotation>(Cliquer sur ce titre pour vous tester)</annotation></span><br>
+<strong>Propriété : </strong><gras>Résolution de l'équation a𝑥²+b𝑥+c=0</gras><br>On calcule le discriminant : <circle>Δ = b² - 4ac</circle>
+<li>Si Δ < 0 : L'équation n'admet aucune solution dans ℝ</li>
+<li>Si Δ = 0 : l'équation admet une unique solution</li>
+<p class="math display">$$\text{S }= \{-b/2a\}$$</p>
+<li>Si Δ > 0 : L'équation admet deux solutions ;</li>
+<a75><p><span class="math display">$$\text{Solution 1 } = \frac{(-b - \sqrt{\Delta})}{2a}
+\\\text{Solution 2 } = \frac{(-b + \sqrt{\Delta})}{2a}
+$$</span></p></a75><br>
+<h2>Racine et formes factorisées</h2><br>
+<strong>Définition : </strong>Une fonction polynôme du second degré est une fonction définie sur ℝ par <surlign>ƒ(𝑥) = a𝑥²+b𝑥+c</surlign>, où a,b et c sont des nombres réels avec a ≠ 0. Cette forme est <surlign>la forme développée</surlign> de ƒ, et les réels a,b et c sont <surlign>les coefficients</surlign> de ƒ.
+<br><br>
+<strong>Définition : </strong> On appelle racine de la fonction polynôme du second degré ƒ tout nombre réel 𝑥₁ tel que ƒ(𝑥₁) = 0. Autrement dit, une <surlign>racine de ƒ</surlign> est une <surlign>solution de l'équation ƒ(𝑥)=0.</surlign><br>
+<h2>Factorisation d'une fonction polynôme du second degré</h2><br>
+<strong>Propriété : </strong>Soit ƒ définie sur ℝ par ƒ(𝑥) = a𝑥²+b𝑥+c, avec a ≠ 0. Si le réel 𝑥₁ est une racine de ƒ, alors ƒ peut se factoriser par 𝑥-𝑥₁ sous la forme : ƒ(𝑥) = a(𝑥-𝑥₁)(a𝑥+d), où d est un nombre réel<br>
+<ul><li>Si ƒ <strong>admet deux racines</strong> 𝑥₁ et 𝑥₂, ƒ peut se factoriser par (𝑥-𝑥₁)(𝑥-𝑥₂)</li>
+<li>Une fonction polynôme du second degré <strong>admet au plus deux racines.</strong></li></ul><br>
+<strong>Propriété : </strong>Soit ƒ définie sur ℝ par ƒ(𝑥) = a𝑥² + b𝑥 + c, avec a ≠ 0. Si ƒ admet les réels 𝑥₁ et 𝑥₂ pour racines, alors ƒ s'écrit sous la forme factorisée : ƒ(𝑥) = a(𝑥-𝑥₁)(𝑥-𝑥₂)<br>
+<h2>Somme et produit des racines d'une fonction polynôme de second degré</h2><br>
+<strong>Propriété : </strong>Soit ƒ définie sur ℝ par ƒ(𝑥) = a𝑥² + b𝑥 + c, avec a ≠ 0. Si ƒ admet les réels 𝑥₁ et 𝑥₂ pour racines, alors :
+<ul><li>La <strong>somme</strong> des racines est : <ul><p><span class="math display">$$S = x_1 + x_2 = -\frac{b}{a} ;$$</span></p></ul></li>
+<li>Le <strong>produit</strong> des racines est : <ul><p><span class="math display">$$P = x_1x_2 = \frac{c}{a} ;$$</span></p></ul></li>
+</ul>
+<div class='tips'><gras>Démonstration : </gras><br>Si ƒ admet les réels 𝑥₁ et 𝑥₂ pour racines, donc ƒ s'écrit sous la forme factorisée :<br><p><span class="math display">$$f = a(x - x_1)(x-x_2)$$</span></p>
+<br>En développant on obtient pour tout réel 𝑥 :<br><p><span class="math display">$$f(x) = a(x^{2}-x_2x - x_1x + x_1x_2)\\ = ax^{2} - a(x_1 + x_2)x + ax_1x2$$</span></p><span class="math display">$$\text{Or, }f(x)=ax^{2} + bx + c$$</span></p><br>
+Donc, en identifiant les coefficients des deux écritures ont obtient:
+<p><span class="math display">$$a(x_1+x_2) = b\text{ et }ax_1x_2 = c$$</span></p><br>
+<p class="math display">$$\text{Puisque }a \neq 0,\text{ on a : } x_1 + x_2 = -\frac{b}{a}\\\text{ et }x_1x_2 = \frac{c}{a}$$</p>
+</div>
+<br>
+<div class="info"><gras>Info : </gras>On admet que deux fonctions polynôme du second degré sont égales si et si seulement elles ont les mêmes coefficients.</div>
+<br>
+<div class="check"><gras>Remarques : </gras><br><ul><li>Si on connaît une racine d'une fonction polynôme du second degré, on peut calculer l'autre racine rapidement en utilisant la somme ou le produit des racines. On aura donc intérêt à repérer, lorsque cela est possible une racine "évidente" parmi des nombres simples comme 1, -2, 2, -2, etc.</li><li>La connaissance de la somme et du produit des racines permet de donner des informations sur le signe des racines.</li></ul></div><br>
+<h2>Exemples</h2>
+<ul>
+  <li>La fonction ƒ est définie sur ℝ par : <p class="math display">$$f(x) = (2x-1)(x+2)$$</p>C'est une fonction polynôme du second degré. En développant, on obtient : <p class="math display">$$f(x) = 2x^{2} + 3x - 2$$</p></li>
+<li>Les <strong>coefficients</strong> de ƒ sont:<p class="math display">$$a = 2, b = 3 \text{ et } c = -2$$</p></li>
+<li>Les <strong>racines</strong> de ƒ, définie par (2𝑥
+ - 1)(𝑥+2) sont ½ et -2:
+</li></ul>
+<a75><p class="math display">$$f(x) = 0 \Leftrightarrow (2x -1)(x+2) = 0\\\Leftrightarrow x = \frac{1}{2}\text{ ou }x = -2$$</p></a75><br>
+<li>Si 1 est racine, l'autre racine est c/a</li>
+<li>Si -1 est racine, l'autre racine est -c/a</li>
+<li>Si a et c sont de même signe et si ƒ admet deux racines, alors ces deux racines sont de même signe puisque leur produit c/a est positif</li>
+  <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</body>
+  <br></br>
+  <center><footer> © 2022 Copyright by Mohamed-Badr Benchekroun (known as Arlequiin). All Rights Reserved. </footer></center>
+</html>
