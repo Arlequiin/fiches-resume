@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <link rel="icon" type="image/x-icon" href="images/fr-logo.ico">
+  <meta property="og:title" content="Fiches Résumés - Arlequiin" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://fiches-resume.arlequiin.repl.co" />
+<meta property="og:image" content="http://my.site.com/images/thumb.png" />
+<meta property="og:description" content="Fiches résumés pour lycéens + outils pour vérifier les connaissances et obtenir un pourcentage." />
+<meta name="theme-color" content="#DEDDAB">
+<meta property="og:site_name" content="Mohamed Badr Benchekroun">
+</head>
+<body onload="startTime()">
+<body>
+  <span onclick="openNav()" class="open">☰</span>
+  <h1>Baccalauréat</h1><br>
+  <center><img src="images/diplome.png" style="width:100%;height:100%;"></center>
+<center><petit>Vous le voulez hein? Il est si beau</petit></center>
+Le bac c'est quoi ? C'est simplement un <strong>bout de papier</strong> qui causera, ou a déjà causé chez toi bien des souffrances. Ce bout de papier n'a qu'un usage, te permettre d'obtenir un autre bout de papier qui lui te permettra d'avoir un boulot, le but d'une vie quoi.<br>
+Cette mini-page te permettra d'anticiper la note finale du bac en fonction des notes que tu as déjà eues, cela n'est compatible qu'avec le bac général <petit><barre>Désolé les autres...</barre></petit><br>
+<h2>Comment la note finale est calculée ?</h2><br>
+<img src="images/bac.png">
+</body>
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Page de garde</a>
+    <a href="maths.html">Maths</a>
+    <a href="spc.html">Physique-Chimie</a>
+    <a href="svt.html">S.V.T</a>
+    <a href="nsi.html">N.S.I</a>
+    <a href="fr.html">Français</a>
+    <a href="bac.html">Calcul des notes</a>
+  </div>
+
+</div>
+<br><h2>Procéder au calcul</h2>
+<li><surlign>Première</surlign></li>
+<form>
+  <label for="spea">Spé abandonnée : </label>
+  <input value="0" type="number" id="spea" name="spea" ><label class="s20">/20</label><br>
+  <label for="lva">LVA : </label>
+  <input value="0" type="number" id="lva" name="lva" ><label class="s20">/20</label><br>
+  <label for="lvb">LVB : </label>
+  <input value="0" type="number" id="lvb" name="lvb" ><label class="s20">/20</label><br>
+  <label for="hg">Histoire-Géo : </label>
+  <input value="0" type="number" id="hg" name="hg" ><label class="s20">/20</label><br>
+  <label for="emc">EMC : </label>
+  <input value="0" type="number" id="emc" name="emc" ><label class="s20">/20</label><br>
+  <label for="es">Ens. Scientifique : </label>
+  <input value="0" type="number" id="es" name="es" ><label class="s20">/20</label><br>
+  <label for="fr">Français (écrit): </label>
+  <input value="0" type="number" id="fre" name="fre" ><label class="s20">/20</label><br>
+  <label for="fr">Français (oral): </label>
+  <input value="0" type="number" id="fro" name="fro" ><label class="s20">/20</label><br>
+</form>
+<br>
+<li><surlign>Terminale</surlign></li>
+<form>
+  <label for="spe1">Spé 1 : </label>
+  <input value="0" type="number" id="spe1" name="spe1" ><label class="s20">/20</label><br>
+  <label for="spe2">Spé 2 : </label>
+  <input value="0" type="number" id="spe2" name="spe2" ><label class="s20">/20</label><br>
+  <label for="philo">Philo : </label>
+  <input value="0" type="number" id="philo" name="philo" ><label class="s20">/20</label><br>
+  <label for="go">Grand-Oral : </label>
+  <input value="0" type="number" id="go" name="go" ><label class="s20">/20</label><br>
+  <label for="eps">EPS : </label>
+  <input value="0" type="number" id="eps" name="eps" ><label class="s20">/20</label><br>
+  <label for="lva2">LVA : </label>
+  <input value="0" type="number" id="lva2" name="lva2" ><label class="s20">/20</label><br>
+  <label for="lvb2">LVB : </label>
+  <input value="0" type="number" id="lvb2" name="lvb2" ><label class="s20">/20</label><br>
+  <label for="hg2">Histoire-Géo : </label>
+  <input value="0" type="number" id="hg2" name="hg2" ><label class="s20">/20</label><br>
+  <label for="emc2">EMC : </label>
+  <input value="0" type="number" id="emc2" name="emc2" ><label class="s20">/20</label><br>
+  <label for="es2">Ens. Scientifique : </label>
+  <input value="0" type="number" id="es2" name="es2" ><label class="s20">/20</label><br>
+</form>
+<button onclick="calcul_note()" class="button-54" style="width:100%;">Calculer</button> 
+<p id="note_finale">APPUYEZ SUR 'CALCULER' POUR OBTENIR NOTE FINALE</p>
+<br></br>
+<center><footer> © 2022 Copyright by Mohamed-Badr Benchekroun (known as Arlequiin). All Rights Reserved. </footer></center>
+
+</html>

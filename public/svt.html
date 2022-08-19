@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <link rel="icon" type="image/x-icon" href="fr-logo.ico">
+</head>
+<body>
+  <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Page de garde</a>
+    <a href="maths.html">Maths</a>
+    <a href="spc.html">Physique-Chimie</a>
+    <a href="svt.html">S.V.T</a>
+    <a href="nsi.html">N.S.I</a>
+    <a href="fr.html">Français</a>
+    <a href="bac.html">Calcul des notes</a>
+  </div>
+
+</div>
+<div id="evaluate" class="evaluate">
+<a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
+<br>
+<br>
+<center><zelda>TIME TO PAIN</zelda></center>
+<br>
+<a id="maintxt">Saisis le texte de la fiche (après l'avoir appris bien-entendu) pour t'évaluer.<br> Vise le score le plus haut!</a>
+<center><textarea placeholder="Les fautes font baisser des points!" id="textarea"></textarea></center>
+<script>
+  document.getElementById("textarea").style.width = "90%";
+  document.getElementById("textarea").style.height = "300px";
+</script>
+<button onclick="Compare_txt(gettext(),fiches.svt[0])" class="button-54">Vérifier</button>
+</div>
+<span onclick="openNav()" class="open">☰</span>
+  <h1>Science et Vie de la Terre</h1><br>
+  <span onclick="openEv()"><h2>Introduction</h2><annotation>(Cliquer sur ce titre pour vous tester)</annotation></span><br>
+  Je ne fais pas la spécialité <strong>S.V.T</strong> ! J'ai donc besoin de votre aide pour remplir cette page, m'envoyer un mail : <surlign>benchekroun.badr@lycee-descartes.com</surlign>
+</body>
+  <br></br>
+  <center><footer> © 2022 Copyright by Mohamed-Badr Benchekroun (known as Arlequiin). All Rights Reserved. </footer></center>
+</html>

@@ -1,0 +1,526 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size:150%;
+  font-family:zulpiya;
+  color:blue;
+  background-image: url("paper.png");
+  background-repeat: repeat;
+  position: relative;
+  z-index:1;
+}
+
+@font-face {
+  font-family: zulpiya;
+  src: url(fonts/Zulpiya-Regular.ttf);
+}
+
+@font-face {
+  font-family: zelda;
+  src: url(fonts/The\ Wild\ Breath\ of\ Zelda.otf);
+}
+
+@font-face {
+  font-family: loverine;
+  src: url(fonts/Loverine.otf);
+}
+
+@font-face {
+  font-family: photograph-sign;
+  src: url(fonts/Photograph\ Signature.ttf);
+}
+
+@font-face {
+  font-family: icons;
+  src: url(fonts/PWIcons.ttf);
+}
+
+@font-face {
+  font-family: autography;
+  src: url(fonts/Autography.otf);
+}
+
+h1{
+  font-family: photograph-sign;
+  text-decoration: underline;     
+  text-decoration-color: #ff0026;  
+  display:inline-block;
+}
+
+h2{
+  font-family: zulpiya;
+  font-size:75%;
+  text-decoration: underline;     
+  text-decoration-color: #2e2e2e;  
+  display:inline-block;
+}
+
+annotation {
+  font-size:50%;
+  color:#4d4d4d;
+}
+
+surlign{
+  text-decoration: green wavy underline;
+}
+
+barre{
+  text-decoration: line-through;
+}
+
+petit{
+  font-size:50%;
+}
+
+  strong {
+      position: relative;
+  }
+
+  strong::before {
+      /* Highlight color */
+      background-color: #ccda0b;
+
+      content: "";
+      position: absolute;
+      width: calc(100% + 4px);
+      height: 60%;
+      left: -2px;
+      bottom: 0;
+      z-index:-1;
+      transform: rotate(-2deg);
+  }
+
+circle{
+  position:relative;
+  left:0.5em;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+circle:before{
+  content:"";
+  z-index:-1;
+  left:-0.5em;
+  top:-0.1em;
+  border-width:2px;
+  border-style:solid;
+  border-color:#ef8c22;
+  position:absolute;
+  border-right-color:transparent;
+  width:100%;
+  height:1em;
+  transform:rotate(2deg);
+  opacity:0.7;
+  border-radius:50%;
+  padding:0.1em 0.25em;
+}
+circle:after{
+  content:"";
+  z-index:-1;
+  left:-0.5em;
+  top:0.1em;
+  padding:0.1em 0.25em;
+  border-width:2px;
+  border-style:solid;
+  border-color:#ef2525;
+  border-left-color:transparent;
+  border-top-color:transparent;
+  position:absolute;
+  width:100%;
+  height:1em;
+  transform:rotate(-1deg);
+  opacity:0.7;
+  border-radius:50%;
+}
+
+footer{
+  position:center;
+  font-family:Arial;
+  color:#545454;
+  font-size:50%;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #032e91;
+  background: yellow;
+}
+
+::selection {
+  color: #001994;
+  background: yellow;
+}
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.open{
+  font-family:loverine;
+  font-size:150%;
+  color: green;
+  cursor: pointer;
+  display:inline-block;
+  margin-right:10px;
+}
+
+.evaluate {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgb(0,0,0); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.evaluate-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.evaluate a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.evaluate a:hover, .evaluate a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.evaluate .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+zelda {
+  font-family: zelda;
+  font-size: 150%;
+  color:red;
+}
+
+icon {
+  font-family: icons;
+  font-size: 100%;
+  color:white;
+}
+
+textarea {
+  width: 0%;
+  color:white;
+  background-color:#292929;
+  font-family:zulpiya;
+  font-size:50%;
+}
+
+span{
+  cursor: pointer;
+}
+/* CSS */
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2f3f93;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
+body .gist .gist-file {
+  margin-bottom: 0;
+  border: 1px dashed #adb5bd;
+  border-radius: 0;
+}
+
+body .gist .gist-data {
+  border-bottom: none;
+  border-radius: 0;
+  background-color: #f1f3f5;
+}
+
+body .gist .blob-wrapper {
+  border-radius: 0;
+}
+
+body .gist .highlight {
+  background-color: transparent;
+  font-family: 'Droid Sans Mono', monospace;
+  font-size: 14px;
+}
+
+body .gist .highlight td {
+  padding: 5px 15px !important;
+  line-height: 1;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body .gist tr:first-child td {
+  padding-top: 15px !important;
+}
+
+body .gist tr:last-child td {
+  padding-bottom: 15px !important;
+}
+
+body .gist .blob-num {
+  color: #ced4da;
+  background-color: #495057;
+  pointer-events: none;
+}
+
+body .gist .gist-meta {
+  display: none;
+}
+
+code {
+  color: #bababa;
+  background:#141414;
+  border-radius: 5px;
+  font-size:75%;
+}
+
+.info
+{
+     background-color: #e7f3fe;
+     background-image: url("images/info.png");
+     background-position: 9px 0px;
+     background-repeat: no-repeat;
+     border-left: solid 4px #3498db;
+     line-height: 18px;
+     overflow: hidden;
+     padding: 15px 60px;
+     font-size: 50%;
+     font-family:Arial, Helvetica, sans-serif;
+     color: black;
+     border-radius: 6px;
+     -moz-border-radius: 6px;
+     -webkit-border-radius: 6px;
+}
+
+.warn
+{
+     background-color: #ffdddd;
+     background-image: url("images/warning.png");
+     background-position: 9px 0px;
+     background-repeat: no-repeat;
+     border-left: solid 4px #f44336;
+     line-height: 18px;
+     overflow: hidden;
+     padding: 15px 60px;
+     font-size: 50%;
+     font-family:Arial, Helvetica, sans-serif;
+     color: black;
+     border-radius: 6px;
+     -moz-border-radius: 6px;
+     -webkit-border-radius: 6px;
+}
+
+.check
+{
+     background-color: #ddffdd;
+     background-image: url("images/check.png");
+     background-position: 9px 0px;
+     background-repeat: no-repeat;
+     border-left: solid 4px #04AA6D;
+     line-height: 18px;
+     overflow: hidden;
+     padding: 15px 60px;
+     font-size: 50%;
+     font-family:Arial, Helvetica, sans-serif;
+     color: black;
+     border-radius: 6px;
+     -moz-border-radius: 6px;
+     -webkit-border-radius: 6px;
+}
+.tips
+{
+     background-color: #ffffcc;
+     background-image: url("images/ampoule.png");
+     background-position: 9px 0px;
+     background-repeat: no-repeat;
+     border-left: solid 4px #ffeb3b;
+     line-height: 18px;
+     overflow: hidden;
+     padding: 15px 60px;
+     font-size: 50%;
+     font-family:Arial, Helvetica, sans-serif;
+     color: black;
+     border-radius: 6px;
+     -moz-border-radius: 6px;
+     -webkit-border-radius: 6px;
+}
+
+.diplomation
+{
+     background-color: #f4e3c9;
+     background-image: url("images/hat.png");
+     background-position: 9px 0px;
+     background-repeat: no-repeat;
+     border-left: solid 4px #a0875f;
+     line-height: 18px;
+     overflow: hidden;
+     padding: 15px 60px;
+     font-size: 50%;
+     font-family:Arial, Helvetica, sans-serif;
+     color: black;
+     border-radius: 6px;
+     -moz-border-radius: 6px;
+     -webkit-border-radius: 6px;
+}
+gras{
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 75%;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.previous:hover{
+  background-color: #6d58d5;
+  color: black;
+}
+
+.next:hover{
+  background-color: #6d58d5;
+  color: black;
+}
+
+.next {
+  background-color: #474747;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.round {
+  border-radius: 6px;
+}
+/*
+alire{
+  border: 2px dashed #383838;  
+  background: url("images/filament-tips.png") no-repeat;
+  background-color: #525252;
+  background-position: left;
+  background-size:20%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 50%;
+  color: #ffffff;
+  font-family:Arial, Helvetica, sans-serif;
+  padding:25px;
+}
+*/
+
+a75 {
+  font-size:75%;
+}
+
+input {
+  border-radius: 5px;
+  font-family: Arial sans-serif;
+  color: red;
+  font-size: 100%;
+  width: 50px;
+}
+
+.s20{
+  color:red;font-family: Arial sans-serif;font-size:100%;
+}
