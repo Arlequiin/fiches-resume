@@ -1,7 +1,9 @@
 //'use strict';
+
+
 function startTime() {
   const today = new Date();
-  let h = today.getHours()-1;
+  let h = today.getHours();
   let m = today.getMinutes();
   let s = today.getSeconds();
   m = checkTime(m);
@@ -90,6 +92,20 @@ document.addEventListener('keydown', evt => {
     }
 });
 
+document.addEventListener('keydown', evt => {
+    if (evt.key === 'q' || evt.key === 'Q') {
+        let pagebutton= document.getElementById("prev");
+        pagebutton.click();
+    }
+});
+
+document.addEventListener('keydown', evt => {
+    if (evt.key === 'd' || evt.key === 'D') {
+      let pagebutton= document.getElementById("next");
+        pagebutton.click();
+    }
+});
+
 function calcul_note(){
   spea = parseFloat(document.getElementById("spea").value);
   lva = parseFloat(document.getElementById("lva").value);
@@ -133,6 +149,7 @@ function calcul_note(){
   document.getElementById("note_finale").innerHTML = `<div class="diplomation"><gras>DIPLÔME DU BACCALAURÉAT GÉNÉRAL<gras><br>MENTION ${mention}<br><p style="color:red;">${note_finale*20/100}/20</p><br>Soit ${note_finale} points sur 100.</div>`
   }
 }
+
 
 const fiches = {
   maths : [

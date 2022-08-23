@@ -11,6 +11,7 @@ app.use(express.static(__dirname + "/public"), (_, res, next) => {
 
 app.listen(8080);
 console.log("website is running")
+console.log("≠ ƒ 𝑥² ₁ ₂ ℝ")
 /*
 const { Client, GatewayIntentBits, Partials } = require("discord.js");
 
