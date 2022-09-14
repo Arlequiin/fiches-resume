@@ -18,14 +18,34 @@
 </head>
 
 <body onload="startTime()">
+<body onload="loading()">
 <body>
+<div class="blurry" id="blurry" style="height:0%;">
+  </div>
   <span onclick="openNav()" class="open">☰</span>
   <h1>Page de garde</h1><br>
   <center><img src="images/fr-logo.png"></center>
+  <div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
   <p>Ce <strong>site web</strong> est destiné au stockage de fiches résumé.. Y en a pour <surlign>tous les goûts~</surlign><br></br>Le but étant de faciliter la tâches à nous autres lycéens.</p>
   Il est <circle class="txt" id="txt"></circle>     , que dirais-tu de travailler 15-20 min histoire de réviser un petit peu ?
   Pour toute demande, veuillez contacter le développeur en balisant le mail <petit>(en mettant [fiches-resume] dans l'objet)</petit> benchekroun.badr@lycee-descartes.com <barre>soyez pas timides</barre>
-  <p>Si tu veux contribuer, envoie moi ta fiche par mail (tu seras crédité bien entendu)</p>
+  <p>Si tu veux contribuer, envoie moi ta fiche par mail (tu seras crédité bien entendu)</p><br>
+Bonne rentrée à tous! <petit>Aidez-moi à remplir ce site!</petit>
+<br><h2>Pronote</h2><br>
+<iframe src="https://pronote.lycee-descartes.ac.ma/eleve.html?fd=1&identifiant=3dED5qQVH5BbxNGJ" title="Pronote" width="100%" height="75%">
+</iframe><br>
 </body>
 <div id="myNav" class="overlay">
 
@@ -37,7 +57,7 @@
     <a href="index.html">Page de garde</a>
     <a href="maths.html">Maths</a>
     <a href="spc.html">Physique-Chimie</a>
-    <a href="svt.html">S.V.T</a>
+    <a href="svt.html">E.S</a>
     <a href="nsi.html">N.S.I</a>
     <a href="fr.html">Français</a>
     <a href="bac.html">Calcul des notes</a>

@@ -16,18 +16,21 @@
 <meta name="theme-color" content="#DEDDAB">
 <meta property="og:site_name" content="Mohamed Badr Benchekroun">
 </head>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+<body onload="loading()">
 <body>
+<div class="blurry" id="blurry">
+  </div>
   <div id="myNav" class="overlay">
 
   <!-- Button to close the overlay navigation -->
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-  <!-- Overlay content -->
   <div class="overlay-content">
     <a href="/index.html">Page de garde</a>
     <a href="/maths.html">Maths</a>
     <a href="/spc.html">Physique-Chimie</a>
-    <a href="/svt.html">S.V.T</a>
+    <a href="/svt.html">E.S</a>
     <a href="/nsi.html">N.S.I</a>
     <a href="/fr.html">Français</a>
     <a href="/bac.html">Calcul des notes</a>
@@ -51,10 +54,24 @@
 <span onclick="openNav()" class="open">☰</span><h1>Mathématiques - Fonctions Polynômes du second degré (1)</h1><br>
 <a href="/maths.html" class="previous round" id="prev">&#8249; Précédent</a>
 <a href="/maths/fonctions-polynome-du-second-degré-2.html" class="next round" id="next">Suivant &#8250;</a><br>
+<div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
 <span onclick="print()"><h2>Imprimer cette page</h2></span><br>
 <a href="python.html"><h2>Python</h2><annotation>(Cliquer sur ce titre pour être redirigé vers l'éditeur de code Python du site)</annotation></a><br>
 <div class="info">C'est la première fiche de la section maths, elle est sur les fonctions polynôme de second degré. Si vous souhaitez accéder au sommaire cliquez <gras><a href="sommaire.html">ici</a></gras><br></div>
 <div class="warn"><gras>Attention : </gras>Ce chapitre nécessite des connaissances en fonctions</div>
+<div class="tips"><gras>Protip : </gras>Utilisez les raccourcis du clavier ;<br><code>Échap</code> : Ouvre le menu<br><code>Q</code> : Précédent<br><code>D</code> : Suivant</div>
 <div class="check">S'éxercer régulièrement est la clé de la réussite</div>
 
 <h2>Racine et formes factorisées</h2><br>
@@ -92,7 +109,7 @@ Donc, en identifiant les coefficients des deux écritures ont obtient:
 <li>Si 1 est racine, l'autre racine est c/a</li>
 <li>Si -1 est racine, l'autre racine est -c/a</li>
 <li>Si a et c sont de même signe et si ƒ admet deux racines, alors ces deux racines sont de même signe puisque leur produit c/a est positif</li><br><br>
-<center><span class="open">And that's pretty much it</span></center>
+<center><span class="open" id="myAudio" onclick="playAudio()">And that's pretty much it</span></center>
   <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 </body>

@@ -10,6 +10,9 @@
   <link rel="icon" type="image/x-icon" href="fr-logo.ico">
 </head>
 <body>
+<body onload="loading()">
+<div class="blurry" id="blurry">
+  </div>
   <div id="myNav" class="overlay">
 
   <!-- Button to close the overlay navigation -->
@@ -20,7 +23,7 @@
     <a href="index.html">Page de garde</a>
     <a href="maths.html">Maths</a>
     <a href="spc.html">Physique-Chimie</a>
-    <a href="svt.html">S.V.T</a>
+    <a href="svt.html">E.S</a>
     <a href="nsi.html">N.S.I</a>
     <a href="fr.html">Français</a>
     <a href="bac.html">Calcul des notes</a>
@@ -44,6 +47,19 @@
 <span onclick="openNav()" class="open">☰</span>
   <h1>Numérique et Sciences de l'Informatique</h1><br></br>
   <span onclick="openEv()"><h2>Introduction</h2><annotation>(Cliquer sur ce titre pour vous tester)</annotation></span><br>
+  <div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
   Laissez-moi deviner, vous êtes ici parce que vous avez peur d'avoir de terribles notes en NSI à la rentrée ? Ou juste parce que vous passez en Terminale, vous pigez rien au Python et vous espérez vous améliorer en l'espace de quelques semaines. Vous êtes au bon endroit!<br>Ici, fi de la théorie! Que de la pratique, si vous voulez comprendre ce qu'est le langage Python comment ça fonctionne et j'en passe, allez voir ailleurs, <a href="https://zestedesavoir.com/tutoriels/2514/un-zeste-de-python/1-premiers-pas/1-presentation/#1-1-presentation">ici par exemple</a>. Bien, ne perdons pas plus de temps.
 <br><h2>Introduction</h2>
 Sans trop rentrer dans la théorie, qu'est-ce que le code ? C'est tout simplement une recette sous forme de texte dont l'ordinateur se sert pour cuisiner, voyez-vous, quand vous cuisinez, il y a des choses que vous ne mettez pas dans l'assiette mais que vous avez utilisé, l'assiette est que la face visible de l'iceberg. En programmation, c'est à vous de choisir ce qui doit être visible. Si vous voulez afficher un élément, il faudra utiliser la fonction <code>print()</code>. Vous pouvez tout afficher avec, on s'en servira PARTOUT!

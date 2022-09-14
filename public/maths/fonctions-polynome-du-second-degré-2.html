@@ -16,6 +16,8 @@
 <meta name="theme-color" content="#DEDDAB">
 <meta property="og:site_name" content="Mohamed Badr Benchekroun">
 </head>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+<body onload="loading()">
 <body>
   <div id="myNav" class="overlay">
 
@@ -23,11 +25,13 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
   <!-- Overlay content -->
+  <div class="blurry" id="blurry">
+  </div>
   <div class="overlay-content">
     <a href="/index.html">Page de garde</a>
     <a href="/maths.html">Maths</a>
     <a href="/spc.html">Physique-Chimie</a>
-    <a href="/svt.html">S.V.T</a>
+    <a href="/svt.html">E.S</a>
     <a href="/nsi.html">N.S.I</a>
     <a href="/fr.html">Français</a>
     <a href="/bac.html">Calcul des notes</a>
@@ -51,8 +55,23 @@
 <span onclick="openNav()" class="open">☰</span><h1>Mathématiques - Fonctions Polynômes du second degré (2)</h1><br>
 <a href="/maths/fonctions-polynome-du-second-degré.html" class="previous round" id="prev">&#8249; Précédent</a>
 <a href="2.html" class="next round" id="next">Suivant &#8250;</a><br>
-<span onclick="print()"><h2>Imprimer cette page</h2></span><br>
-<a href="python.html"><h2>Python</h2><annotation>(Cliquer sur ce titre pour être redirigé vers l'éditeur de code Python du site)</annotation></a><br>
+<div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
+<div>
+<span onclick="print()"><h2>Imprimer cette page</h2></span>
+<a href="python.html"><h2>Python</h2><annotation>(Cliquer sur ce titre pour être redirigé vers l'éditeur de code Python du site)</annotation></a>
+</div>
 <div class="info">C'est la deuxième fiche de la section maths, elle est sur les fonctions polynôme de second degré. Si vous souhaitez accéder au sommaire cliquez <gras><a href="sommaire.html">ici</a></gras><br></div>
 <div class="warn"><gras>Attention : </gras>Vous ne pouvez pas sauter la fiche précédente</div>
 <div class="check">S'éxercer régulièrement est la clé de la réussite</div>
@@ -80,7 +99,16 @@ $$</span></p></a75><br>
 <li>Si Δ > 0 : ƒ(𝑥) = a(𝑥-𝑥₁)(𝑥-𝑥₂), où 𝑥₁ et 𝑥₂ sont racines de ƒ</li>
 </ul>
 <br><br>
-<center><p class="open">And that's pretty much it</open></center>
+<center><p class="open" onclick="playAudio()" id="myAudio" >And that's pretty much it</open></center>
+<!--
+<div class="info">
+  <div class="warn"><gras>Attention : </gras>Ces scripts sont expérimentaux, peuvent donc rencontrer des problèmes. Envoyez un mail au dév (benchekroun.badr@lycee-descartes.ma) si vous en 
+  rencontrez</div>
+  Entrez votre fonction polynôme du second degré
+  <div>ƒ(𝑥) =<input type="text" id="expr" class="enterfunction"></input><button onclick="calculracines">Valider</button></div>
+<a id="outputracines"></a>
+</div>-->
+
   <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 </body>

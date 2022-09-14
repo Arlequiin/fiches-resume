@@ -9,7 +9,11 @@
   <script src="script.js"></script>
   <link rel="icon" type="image/x-icon" href="images/fr-logo.ico">
 </head>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+<body onload="loading()">
 <body>
+<div class="blurry" id="blurry">
+  </div>
   <div id="myNav" class="overlay">
 
   <!-- Button to close the overlay navigation -->
@@ -20,7 +24,7 @@
     <a href="index.html">Page de garde</a>
     <a href="maths.html">Maths</a>
     <a href="spc.html">Physique-Chimie</a>
-    <a href="svt.html">S.V.T</a>
+    <a href="svt.html">E.S</a>
     <a href="nsi.html">N.S.I</a>
     <a href="fr.html">Français</a>
     <a href="bac.html">Calcul des notes</a>
@@ -45,6 +49,19 @@
 <h1>Mathématiques</h1><br>
 <a href="#"  class="previous round" id="prev">&#8249; Précédent</a>
 <a href="maths/fonctions-polynome-du-second-degré.html" class="next round" id="next">Suivant &#8250;</a><br>
+<div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
 <span onclick="print()"><h2>Imprimer cette page</h2></span><br>
 <a href="python.html"><h2>Python</h2><annotation>(Cliquer sur ce titre pour être redirigé vers l'éditeur de code Python du site)</annotation></a><br>
 <div class="info">C'est la page de garde de la section maths, elle contient les propriétés de base. Si vous souhaitez accéder au sommaire cliquez <gras><a href="maths/sommaire.html">ici</a></gras><br></div>
@@ -55,7 +72,7 @@
   Opérations sur les <strong>fractions</strong>
   <br>1. Modification ou simplification 
   <surlign>où b ≠ 0 & k ≠ 0</surlign>
-  <p><span class="math display">$$\frac{a*k}{b*k} =
+  <p><span class="math display">$$\frac{a\cdot k}{b\cdot k} =
 \frac{a}{b}$$</span></p>
   <br>2. Addition et soustraction
   <surlign>où b ≠ 0</surlign>
@@ -63,23 +80,23 @@
 \frac{a\pm c}{b}$$</span></p>
   <br>3. Multiplication
   <surlign>b,d non nuls</surlign>
-  <p><span class="math display">$$\frac{a}{b} * \frac{c}{d} =
+  <p><span class="math display">$$\frac{a}{b} \cdot  \frac{c}{d} =
 \frac{ac}{bd}$$</span></p>
   <br>4. Division
   <surlign>b,d,c non nuls</surlign>
   <p><span class="math display">$$\frac{a}{b} / \frac{c}{d} =
-\frac{a}{b} * \frac{d}{c} = \frac{ad}{bc}$$</span></p>
+\frac{a}{b} \cdot  \frac{d}{c} = \frac{ad}{bc}$$</span></p>
 Opérations sur les <strong>puissances</strong>
   <br>Pour n et p entiers et a et b réels (a et b non nuls)
   <p><span class="math display">$$a^{0} = 1, a^{1} = a$$</span></p>
-  <p><span class="math display">$$a^{n} * a^{p} = a^{n+p}$$</span></p>
+  <p><span class="math display">$$a^{n} \cdot  a^{p} = a^{n+p}$$</span></p>
   <p><span class="math display">$$\frac{a^{n}}{a^{p}} = a^{n-p}$$</span></p>
   <p><span class="math display">$$a^{-n} = \frac{1}{a^{n}}$$</span></p>
-  <p><span class="math display">$$(a*b)^{n} = a^{n}*b^{n}$$</span></p>
-  <p><span class="math display">$$(\frac{a}{b})^{n} = a^{n} * b^{n}$$</span></p>
+  <p><span class="math display">$$(a\cdot b)^{n} = a^{n}\cdot b^{n}$$</span></p>
+  <p><span class="math display">$$(\frac{a}{b})^{n} = a^{n} \cdot  b^{n}$$</span></p>
   <br>Opération sur les <strong>racines carrées</strong>
   Pour a et b deux nombres positifs (b non nul)
-  <p><span class="math display">$$\sqrt{a*b} = \sqrt{a} * \sqrt{b}$$</span></p>
+  <p><span class="math display">$$\sqrt{a\cdot b} = \sqrt{a} \cdot  \sqrt{b}$$</span></p>
   <p><span class="math display">$$\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}$$</span></p>
   <p><span class="math display">$$\sqrt{a^{2}} = |a|, \sqrt{a}^{2} = a$$</span></p>
   <p><span class="math display">$$\sqrt{a+b} \neq \sqrt{a}+\sqrt{b}$$</span></p>

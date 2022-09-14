@@ -80,7 +80,9 @@ if (pourcentage==100){
 }
 }
 //ajouter print pour imprimer les fiches
-
+function changec(color){
+  document.body.style.color = color;
+}
 document.addEventListener('keydown', evt => {
     if (evt.key === 'Escape') {
         let width_nav = (document.getElementById("myNav").style.width);
@@ -89,6 +91,36 @@ document.addEventListener('keydown', evt => {
         } else {
           closeNav();
         }
+    }
+});
+
+document.addEventListener('keydown', evt => {
+    if (evt.key === 'a' || evt.key === 'A') {
+        let width_nav = (document.getElementById("pronote").style.height);
+        if (width_nav == "0%"){
+          document.getElementById("pronote").style.height = "100%";
+          console.log("workin'")
+        } else {
+          document.getElementById("pronote").style.height = "0%";
+        }
+    }
+});
+function loading(){
+  setTimeout(function() {
+    document.getElementById("blurry").style.height = "0%";
+  }, 1500);
+}
+
+document.addEventListener('keydown', evt => {
+    if (evt.key === 'c' || evt.key === 'C') {
+        alert("Merci de ne pas copier-coller de texte du site.")
+        reload()
+    }
+});
+
+document.addEventListener('keydown', evt => {
+    if (evt.key === 'r' || evt.key === 'R') {
+        window.location.reload();
     }
 });
 
@@ -147,6 +179,52 @@ function calcul_note(){
     document.getElementById("note_finale").innerHTML = `<div class="warn"><gras>Baccalauréat raté.</gras><br><p style="color:red;">${note_finale*20/100}/20</p><br>Soit ${note_finale} points sur 100.</div>`
   } else {
   document.getElementById("note_finale").innerHTML = `<div class="diplomation"><gras>DIPLÔME DU BACCALAURÉAT GÉNÉRAL<gras><br>MENTION ${mention}<br><p style="color:red;">${note_finale*20/100}/20</p><br>Soit ${note_finale} points sur 100.</div>`
+  }
+}
+
+var colorWell
+var defaultColor = "#0000ff";
+
+window.addEventListener("load", startup, false);
+function startup() {
+  colorWell = document.querySelector("#colorWell");
+  colorWell.value = defaultColor;
+  colorWell.addEventListener("input", updateFirst, false);
+  colorWell.addEventListener("change", updateAll, false);
+  colorWell.select();
+}
+function updateFirst(event) {
+  let p = document.body;
+
+  if (p) {
+    p.style.color = event.target.value;
+  }
+}
+function updateAll(event) {
+  document.querySelectorAll("p").forEach(function(p) {
+    p.style.color = event.target.value;
+  });
+}
+
+function toggleCheck() {
+  if(document.getElementById("mycheckbox").checked === true){
+    /*
+    document.body.style.background = "url('/images/paper.jpg')";
+    document.body.style.backgroundRepeat = "repeat";
+    document.body.style.position = "relative";
+    document.body.style.zIndex = "1";
+    */
+    document.getElementById("darkmode").textContent = "Filtre activé : ";
+    document.body.style.filter = "grayscale(100%)";
+  } else {
+    /*
+    document.body.style.background = "url('/images/paper.png')";
+    document.body.style.backgroundRepeat = "repeat";
+    document.body.style.position = "relative";
+    document.body.style.zIndex = "1";
+    */
+    document.body.style.filter = "grayscale(0%)";
+    document.getElementById("darkmode").textContent = "Filtre désactivé";
   }
 }
 
