@@ -9,9 +9,23 @@
   <script src="script.js"></script>
   <link rel="icon" type="image/x-icon" href="fr-logo.ico">
 </head>
-<body onload="loading()">
 <body>
 <div class="blurry" id="blurry">
+<div class="popup">
+  🔒<br></br>Cette page est inaccessible au public. Saisissez le mot de passe pour y accéder.
+  <center><input type="password" class="form__field" placeholder="Mot de passe" name="name" id='name' required /></center>
+<script>
+window.addEventListener('keydown', function (e) {
+  if (e.key=="Enter"){
+    let pw=document.getElementById("name").value
+    if (pw=="ionesco"){
+      document.getElementById("blurry").style.height='0';
+    }
+  }
+  
+})
+</script>
+</div>
   </div>
   <div id="myNav" class="overlay">
 
@@ -59,7 +73,7 @@
 <input type="color" value="#ff0000" id="colorWell">
 </div>
 </div>
-  <span onclick="openEv()"><h2>Introduction</h2><annotation>(Cliquer sur ce titre pour vous tester)</annotation></span><br>
+<h2>Sommaire</h2><br>
   Le <strong>paradis</strong>, à n'en pas douter, n'est qu'une <surlign>immense bibliothèque</surlign>.
 </body>
   <br></br>

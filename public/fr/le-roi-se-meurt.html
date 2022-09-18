@@ -10,6 +10,23 @@
   <link rel="icon" type="image/x-icon" href="fr-logo.ico">
 </head>
 <body>
+<div class="blurry" id="blurry">
+<div class="popup">
+  🔒<br></br>Cette page est inaccessible au public. Saisissez le mot de passe pour y accéder.
+  <center><input type="password" class="form__field" placeholder="Mot de passe" name="name" id='name' required /></center>
+<script>
+window.addEventListener('keydown', function (e) {
+  if (e.key=="Enter"){
+    let pw=document.getElementById("name").value
+    if (pw=="ionesco"){
+      document.getElementById("blurry").style.height='0';
+    }
+  }
+  
+})
+</script>
+</div>
+  </div>
   <div id="myNav" class="overlay">
 
   <!-- Button to close the overlay navigation -->
@@ -39,10 +56,10 @@
   document.getElementById("textarea").style.width = "90%";
   document.getElementById("textarea").style.height = "300px";
 </script>
-<button onclick="Compare_txt(gettext(),fiches.svt[0])" class="button-54">Vérifier</button>
+<button onclick="Compare_txt(gettext(),fiches.fr[0])" class="button-54">Vérifier</button>
 </div>
 <span onclick="openNav()" class="open">☰</span>
-  <h1>Ens. Scientifique</h1><br>
+  <h1>Français</h1><br>
   <div class="settings">
 <div>
 <a75 id="darkmode">Noir et Blanc :</a75>
@@ -56,10 +73,8 @@
 <input type="color" value="#ff0000" id="colorWell">
 </div>
 </div>
-  <span onclick="openEv()"><h2>Ordres de grandeur</h2><br>
-    C'est en cours de rédaction... Patientez, si vous n'y arrivez pas faites du Yoga.<br>
-  <h2>Compositions</h2><br>
-    <img src="https://cdn.discordapp.com/attachments/1007084092690546729/1019757172290224149/unknown.png">
+  <span onclick="openEv()"><h2>Introduction</h2><annotation>(Cliquer sur ce titre pour vous tester)</annotation></span><br>
+  Le <strong>paradis</strong>, à n'en pas douter, n'est qu'une <surlign>immense bibliothèque</surlign>.
 </body>
   <br></br>
   <center><footer> © 2022 Copyright by Mohamed-Badr Benchekroun (known as Arlequiin). All Rights Reserved. </footer></center>

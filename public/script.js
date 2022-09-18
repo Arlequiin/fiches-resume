@@ -112,13 +112,6 @@ function loading(){
 }
 
 document.addEventListener('keydown', evt => {
-    if (evt.key === 'c' || evt.key === 'C') {
-        alert("Merci de ne pas copier-coller de texte du site.")
-        reload()
-    }
-});
-
-document.addEventListener('keydown', evt => {
     if (evt.key === 'r' || evt.key === 'R') {
         window.location.reload();
     }
