@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Fiche résumés</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="script.js"></script>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
   <link rel="icon" type="image/x-icon" href="fr-logo.ico">
 </head>
 <body>
@@ -34,13 +34,13 @@ window.addEventListener('keydown', function (e) {
 
   <!-- Overlay content -->
   <div class="overlay-content">
-    <a href="index.html">Page de garde</a>
-    <a href="maths.html">Maths</a>
-    <a href="spc.html">Physique-Chimie</a>
-    <a href="svt.html">E.S</a>
-    <a href="nsi.html">N.S.I</a>
-    <a href="fr.html">Français</a>
-    <a href="bac.html">Calcul des notes</a>
+    <a href="/index.html">Page de garde</a>
+    <a href="/maths.html">Maths</a>
+    <a href="/spc.html">Physique-Chimie</a>
+    <a href="/svt.html">E.S</a>
+    <a href="/nsi.html">N.S.I</a>
+    <a href="/fr.html">Français</a>
+    <a href="/bac.html">Calcul des notes</a>
   </div>
 
 </div>
@@ -59,7 +59,9 @@ window.addEventListener('keydown', function (e) {
 <button onclick="Compare_txt(gettext(),fiches.fr[0])" class="button-54">Vérifier</button>
 </div>
 <span onclick="openNav()" class="open">☰</span>
-  <h1>Français</h1><br>
+  <h1>Le roi se meurt, Ionesco</h1><br>
+  <a href="/fr.html" class="previous round" id="prev">&#8249; Précédent</a>
+<a href="/fr/2.html" class="next round" id="next">Suivant &#8250;</a><br>
   <div class="settings">
 <div>
 <a75 id="darkmode">Noir et Blanc :</a75>
@@ -73,8 +75,42 @@ window.addEventListener('keydown', function (e) {
 <input type="color" value="#ff0000" id="colorWell">
 </div>
 </div>
-  <span onclick="openEv()"><h2>Introduction</h2><annotation>(Cliquer sur ce titre pour vous tester)</annotation></span><br>
-  Le <strong>paradis</strong>, à n'en pas douter, n'est qu'une <surlign>immense bibliothèque</surlign>.
+<div class="tips">Fiche faite avec l'aide de Mme Bartal</div>
+<div class="diplomation">Oeuvre du Parcours (01/20)</div>
+<button class="button-54" onclick="openEv()">SE TESTER</button>
+<h2>Introduction</h2><br>
+<iframe src="Le Roi se meurt.pdf#page=40&toolbar=0&navpanes=0&scrollbar=0" width="100%" height="500px">
+    </iframe>
+  <div class="info">
+    <details>
+      <summary>Résumé de l'œuvre</summary>
+    <div class="tips" style="font-size:100%;"><em>Le Roi se meurt</em>, jouée en 1962, met en scène le roi Bérenger Ier qui vient d'apprendre de sa première femme, Marguerite, et de son médecin qu'il va mourir «À la fin du spectacle». Tandis que Marguerite le rabroue et l'enjoint à accepter son sort, sa deuxième femme Marie, refuse d'accepter cette mort inéluctable. Le royaume tombe d'ailleurs en ruines, à l'image du monarque, qui s'accroche pourtant desespérément à son pouvoir. La pièce met ainsi en scène l'agonie du roi et sa lente et difficile résignation face à la mort. Dans cette pièce teintée d'un humour très amer, les personnages s'apparentent à des clowns tristes ou «guignol[s] tragique[s]» pour reprendre une expression tirée d'une didascalie de la pièce (p. 43). Le sujet traité est grave et sérieux puisqu'il s'agit de mettre en scène l'être humain confronté à la mort. En qui plus est un roi, c'est à dire un être humain habitué aux égards, à un traitement spécial, à un destin exceptionnel, habitué également à donner la mort, à diriger, et qui doit pourtant faire face à la mort, lui aussi, parfaitement impuissant.</div>
+    </details>
+    </div>
+  <p id="fiche">
+    <strong>Amorce</strong> : "Le monde ne sera pas détruit par ceux qui font le mal, mais par ceux qui les regardent sans rien faire." disait Einstein.
+    <br><strong>Auteur</strong> : Ionesco est l'un des pères du théâtre de l'absurde, il a écrit plusieurs «farces tragiques» qui concilient des registres longtemps opposés tel que <em>La Leçon</em> (1950) ou <em>Les Chaises </em>(1952).
+    <br><strong>Courant</strong> : Théâtre de l'absurde<br>
+    <strong style="text-decoration:underline;">Mouvements</strong> :<br><ul>
+      <li>Mouvement 1 : Première replique du Roi (lignes 1 à 8)<br><surlign>«Les ordres du roi»</surlign></li>
+      <li>Mouvement 2 : De l'intervention du médecin à l'arrivée du garde (lignes 9 à 19)<br><surlign>«Compte à rebours»</surlign></li>
+      <li>Mouvement 3 : De l'arrivée du garde à la dernière replique<br><surlign>«Un fondant au temps»</surlign></li>
+    <li>Pour chaque ordre envers la nature, rien ne se passe</li>
+    <li>Pour les ordres envers les humains, l'exact inverse se produit.</li>
+    </ul>
+  <p style="text-decoration:underline;text-decoration-color:black;">Problématique : En quoi ce dialogue burlesque révèle-t-il l'impuissance du roi face à la fuite du temps ?</p>
+  <h2>Les ordres du roi</h2><br>
+  <ul>
+    <li>Anaphore : 10*J'ordonne que; Comique de répétition; Référence aux dix commandements.</li>
+    <li>Ordres absurdes, propres aux divinités, preuve d'orgueil</li>
+    <li>Gradation descendante : de l'absurde au réaliste</li>
+    <li>Tenir la foudre entre ses mains : Référence à Zeus/Jupiter, dieu des dieux</li>
+    <li>Incompréhension montrée par l'expression «Quoi? Rien»</li>
+  </ul>
+  <br>
+<strong>CCL</strong> : Le roi fait preuve de vanité, d'orgueil, se prend pour un dieu (souligné par les figures ci-dessus). À force d'ordonner sans résultat, le roi est rendu ridicule, il est déchu, destitué. Perd de son autorité.
+     </p>
+  
 </body>
   <br></br>
   <center><footer> © 2022 Copyright by Mohamed-Badr Benchekroun (known as Arlequiin). All Rights Reserved. </footer></center>

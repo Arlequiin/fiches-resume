@@ -94,31 +94,23 @@ document.addEventListener('keydown', evt => {
     }
 });
 
-document.addEventListener('keydown', evt => {
-    if (evt.key === 'a' || evt.key === 'A') {
-        let width_nav = (document.getElementById("pronote").style.height);
-        if (width_nav == "0%"){
-          document.getElementById("pronote").style.height = "100%";
-          console.log("workin'")
-        } else {
-          document.getElementById("pronote").style.height = "0%";
-        }
-    }
-});
+
 function loading(){
   setTimeout(function() {
     document.getElementById("blurry").style.height = "0%";
   }, 1500);
 }
-
+/*
 document.addEventListener('keydown', evt => {
     if (evt.key === 'r' || evt.key === 'R') {
         window.location.reload();
     }
 });
+*/
+// bind an event handler to the element
 
 document.addEventListener('keydown', evt => {
-    if (evt.key === 'q' || evt.key === 'Q') {
+    if (evt.key === 'q' || evt.key === 'Q' || evt.key === 'a' || evt.key === 'A' && !typing) {
         let pagebutton= document.getElementById("prev");
         pagebutton.click();
     }
@@ -221,7 +213,6 @@ function toggleCheck() {
   }
 }
 
-
 const fiches = {
   maths : [
     "1. Modification ou simplification où b != 0 & k != 0 a*k/b*k = a/b 2.Addition et soustraction où b != 0 a/b+-",
@@ -239,3 +230,4 @@ const fiches = {
     "Le paradis, à n'en pas douter, n'est qu'une immense bibliothèque.",
   ]
 }
+   

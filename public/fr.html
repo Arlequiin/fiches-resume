@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Fiche résumés</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="script.js"></script>
   <link rel="icon" type="image/x-icon" href="fr-logo.ico">
 </head>
@@ -44,23 +45,12 @@ window.addEventListener('keydown', function (e) {
   </div>
 
 </div>
-<div id="evaluate" class="evaluate">
-<a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
-<br>
-<br>
-<center><zelda>TIME TO PAIN</zelda></center>
-<br>
-<a id="maintxt">Saisis le texte de la fiche (après l'avoir appris bien-entendu) pour t'évaluer.<br> Vise le score le plus haut!</a>
-<center><textarea placeholder="Les fautes font baisser des points!" id="textarea"></textarea></center>
-<script>
-  document.getElementById("textarea").style.width = "90%";
-  document.getElementById("textarea").style.height = "300px";
-</script>
-<button onclick="Compare_txt(gettext(),fiches.fr[0])" class="button-54">Vérifier</button>
-</div>
 <span onclick="openNav()" class="open">☰</span>
   <h1>Français</h1><br>
+  <a href="#" class="previous round" id="prev">&#8249; Précédent</a>
+<a href="fr/le-roi-se-meurt.html" class="next round" id="next">Suivant &#8250;</a><br>
   <div class="settings">
+    
 <div>
 <a75 id="darkmode">Noir et Blanc :</a75>
 <label class="switch">
@@ -74,7 +64,11 @@ window.addEventListener('keydown', function (e) {
 </div>
 </div>
 <h2>Sommaire</h2><br>
-  Le <strong>paradis</strong>, à n'en pas douter, n'est qu'une <surlign>immense bibliothèque</surlign>.
+<ul>
+  <li><a href='fr/le-roi-se-meurt.html'>Le roi se meurt</a></li>
+</ul>
+<h2>Théâtre de l'absurde</h2><br>
+</strong>Le <surlign>théâtre de l'absurde</surlign> met en scène des intrigues dans lesquelles le non-sens et le grotesque recèlent une portée satirique et philosophique. Il questionne ainsi la place de l'Homme au sein du monde et propose généralement une vision très pessimiste de la condition humaine. Les pièces se caractérisent par leur absence d'intrigue (ou une intrigue qui tient en quelques mots), par l'absence de héros et l'utilisation d'un langage qui révèle sa propre absurdité et son impuissance à dire le réel. Ces pièces laissent la part belle à un rire assez noir, qui laisse transparaître une angoisse fondamentale face à l'absurdité du monde. 
 </body>
   <br></br>
   <center><footer> © 2022 Copyright by Mohamed-Badr Benchekroun (known as Arlequiin). All Rights Reserved. </footer></center>
