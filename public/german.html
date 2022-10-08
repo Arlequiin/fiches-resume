@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <link rel="icon" type="image/x-icon" href="images/fr-logo.ico">
+</head>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+<body onload="loading()">
+<body>
+<div class="blurry" id="blurry">
+  </div>
+  <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Page de garde</a>
+    <a href="maths.html">Maths</a>
+    <a href="spc.html">Physique-Chimie</a>
+    <a href="svt.html">E.S</a>
+    <a href="nsi.html">N.S.I</a>
+    <a href="fr.html">Français</a>
+    <a href="bac.html">Calcul des notes</a>
+  </div>
+
+</div>
+<div id="evaluate" class="evaluate">
+<a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
+<br>
+<br>
+<center><zelda>TIME TO PAIN</zelda></center>
+<br>
+<a id="maintxt">Saisis le texte de la fiche (après l'avoir appris bien-entendu) pour t'évaluer.<br> Vise le score le plus haut!<br>IMPORTANT : Ne pouvant pas écrire les divisions telles qu'elles, vous devrez écrire avec la <a href="nsi.html">syntaxe python</a> du site, largement inspirée de la syntaxe de langages de programmation</a>
+<center><textarea placeholder="Les fautes font baisser des points!" id="textarea"></textarea></center>
+<script>
+  document.getElementById("textarea").style.width = "90%";
+  document.getElementById("textarea").style.height = "300px";
+</script>
+<button onclick="Compare_txt(gettext(),fiches.maths[0])" class="button-54">Vérifier</button>
+</div>
+<span onclick="openNav()" class="open">☰</span>
+<h1>German</h1><br>
+<a href="#"  class="previous round" id="prev">&#8249; Précédent</a>
+<a href="maths/fonctions-polynome-du-second-degré.html" class="next round" id="next">Suivant &#8250;</a><br>
+<div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
+ich mag pflanzen<br>
+<h2>Basic</h2><br>
+<strong>Pronoms</strong><br>
+  Ich : Je<br>
+  Du : Tu<br>
+  Er : Lui<br>
+  Es : Lui<br>
+  Sie : Elle<br>
+  Wir : Nous<br>
+  Ihr : Vous<br>
+  Sie : Ils/Elles<br>
+  Sie : Vous<br>
+  <strong>Vocabulaire, Bouffe</strong><br>
+  Bier : Bière<br>Wein : Vin<br>Brot : Pain<br>Wasser : Eau<br>Milch : Lait<br>Kaffee : Café<br>
+  <strong>Vocabulaire, personnes</strong><br>
+  Mann : Mari<br>
+  Frau : Femme (Wife)<br>
+  Schwester : Soeur<br>
+  Bruder : Frère<br>
+  Mutter : Mère<br>
+  Vater : Père<br>
+  Sohn : Fils<br>
+  Tochter : Fille<br>
+  Groß : Grand<br>
+  Klug : Intelligent<br>
+  Nett : Gentil<br>
+  <strong>Chiffres</strong><br>
+  0 : Null<br>
+  1 : Eins<br>
+  2 : Zwei<br>
+  3 : Drei<br>
+  4 : Vier<br>
+  5 : fünf<br>
+</body>
+  <br></br>
+  <center><footer> © 2022 Copyright by Mohamed-Badr Benchekroun (known as Arlequiin). All Rights Reserved. </footer></center>
+</html>

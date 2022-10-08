@@ -52,9 +52,9 @@
 </script>
 <button onclick="Compare_txt(gettext(),fiches.maths[0])" class="button-54">Vérifier</button>
 </div>
-<span onclick="openNav()" class="open">☰</span><h1>Mathématiques - Fonctions Polynômes du second degré (2)</h1><br>
+<span onclick="openNav()" class="open">☰</span><h1>Mathématiques - Fonctions Polynômes du second degré (3)</h1><br>
 <a href="/maths/fonctions-polynome-du-second-degré.html" class="previous round" id="prev">&#8249; Précédent</a>
-<a href="fonctions-polynome-du-second-degré-3.html" class="next round" id="next">Suivant &#8250;</a><br>
+<a href="2.html" class="next round" id="next">Suivant &#8250;</a><br>
 <div class="settings">
 <div>
 <a75 id="darkmode">Noir et Blanc :</a75>
@@ -72,43 +72,30 @@
 <span onclick="print()"><h2>Imprimer cette page</h2></span>
 <a href="python.html"><h2>Python</h2><annotation>(Cliquer sur ce titre pour être redirigé vers l'éditeur de code Python du site)</annotation></a>
 </div>
-<div class="info">C'est la deuxième fiche de la section maths, elle est sur les fonctions polynôme de second degré. Si vous souhaitez accéder au sommaire cliquez <gras><a href="sommaire.html">ici</a></gras><br></div>
+<div class="info">C'est la troisième fiche de la section maths, elle est sur les fonctions polynôme de second degré. Si vous souhaitez accéder au sommaire cliquez <gras><a href="sommaire.html">ici</a></gras><br></div>
 <div class="warn"><gras>Attention : </gras>Vous ne pouvez pas sauter la fiche précédente</div>
 <div class="check">S'éxercer régulièrement est la clé de la réussite</div>
-<span onclick="openEv()"><h2>Forme canonique d'un polynôme du second degré</h2><annotation>(Cliquer sur ce titre pour vous tester)</annotation></span><br>
-<strong>Propriété : </strong>Toute fonction polynôme du second degré ƒ définie sur ℝ par ƒ(𝑥) = a𝑥² + b𝑥 + c s'écrit sous la forme <surlign>ƒ(𝑥) = a(𝑥-α)²+β</surlign>
-<br><br>
-<div class="tips"><gras>Démonstration</gras><br><center>Puisque a ≠ 0 :</center>
-<span class="math display">$$a(x^{2}+\frac{b}{a}x) + c = a((x+\frac{b}{2a})^{2}-\frac{b^{2}}{4a^{2}})+c\\f(x) = a(x+\frac{b}{2a})^{2} - \frac{b^{2}}{2a})^{2}\\\text{En notant }\Delta = b^{2} - 4ac\text{, on a: }\\f(x) = a(x+\frac{b}{2a})^{2}-\frac{\Delta}{4a}\\\text{En posant }\\\alpha = -\frac{b}{2a}\text{ et }\beta = \frac{\Delta}{4a}\\\text{on obtient : }f(x) = a(x-\alpha)^{2}+\beta$$</span>
-</div><br>
-<h2>Résolution de l'équation a𝑥²+b𝑥+c=0</h2><br>
-<strong>Définition : </strong>Si ƒ est définie ℝ par ƒ(𝑥) = a𝑥²+b𝑥+c, avec a ≠ 0, on appelle <surlign>discriminant</surlign>de ƒ le nombre : Δ = b² - 4ac<br>
-<strong>Propriété : </strong><gras>Résolution de l'équation a𝑥²+b𝑥+c=0</gras><br>On calcule le discriminant : <circle>Δ = b² - 4ac</circle>
-<li>Si Δ < 0 : L'équation n'admet aucune solution dans ℝ</li>
-<li>Si Δ = 0 : l'équation admet une unique solution</li>
-<p class="math display">$$\text{S }= \{-b/2a\}$$</p>
-<li>Si Δ > 0 : L'équation admet deux solutions ;</li>
-<a75><p><span class="math display">$$\text{Solution 1 } = \frac{(-b - \sqrt{\Delta})}{2a}
-\\\text{Solution 2 } = \frac{(-b + \sqrt{\Delta})}{2a}
-$$</span></p></a75><br>
-<strong>Propriété : </strong>Factorisation de ƒ(𝑥) = a𝑥² + b𝑥 + c suivant le signe de Δ
-<ul><li>
-  Si Δ < 0 : Pas de factorisation possible
-</li>
-<li>Si Δ = 0 : ƒ(𝑥) = a(𝑥-𝑥₀)², ou 𝑥₀ est l'unique racine de ƒ</li>
-<li>Si Δ > 0 : ƒ(𝑥) = a(𝑥-𝑥₁)(𝑥-𝑥₂), où 𝑥₁ et 𝑥₂ sont racines de ƒ</li>
-</ul>
-<br><br>
-<center><p class="open" onclick="playAudio()" id="myAudio" >And that's pretty much it</open></center>
-<!--
-<div class="info">
-  <div class="warn"><gras>Attention : </gras>Ces scripts sont expérimentaux, peuvent donc rencontrer des problèmes. Envoyez un mail au dév (benchekroun.badr@lycee-descartes.ma) si vous en 
-  rencontrez</div>
-  Entrez votre fonction polynôme du second degré
-  <div>ƒ(𝑥) =<input type="text" id="expr" class="enterfunction"></input><button onclick="calculracines">Valider</button></div>
-<a id="outputracines"></a>
-</div>-->
 
+<h2>Variation et courbe représentative</h2><br>
+<strong>Propriété</strong> : Soit ƒ la fonction polynôme du second degré définie sur ℝ par ƒ(𝑥) = a𝑥²+b𝑥+c, avec a ≠ 0 ou a, b et c sont des réels.<br>
+ƒ s'écrit sous forme canonique ƒ(𝑥) = a(𝑥-α)²+β, ou α et β sont des réels tels que ƒ(α)=β.<br>
+Le sens de variations de la fonction ƒ dépend du signe du coefficient a.<petit>Si a < 0, la fonction "lève les bras"</petit>
+<br>
+<li>Si a < 0, la fonction 𝑓 est d'abord décroissante puis croissante</li>
+β est le minimum de ƒ sur ℝ. Il est atteint en 𝑥 = α.
+<li>Si a > 0, la fonction 𝑓 est d'abord croissante puis décroissante</li>
+β est le maximum de ƒ sur ℝ. Il est atteint en 𝑥 = α.
+<br><h2>Courbe représentative</h2><br>
+<strong>Définition</strong> Dans un repère orthogonal du plan, la courbe représentative d'une polynôme du second degré est un parabole d'équation y=a𝑥²+b𝑥+c, où a,b et c sont des réels avec a≠0.
+<strong>Propriété</strong> : Soit ƒ la fonction polynôme de second degré écrite sous la forme canonique ƒ(𝑥)=a(𝑥-α)-β et P la parabole représentatant la fonction ƒ.
+<li>Le point S(α;β) est le sommet de la parabole P.</li>
+<li>La droite d'équation 𝑥 = α est l'axe de symétrie de la parabole P.</li>
+<div class=tips>
+<gras>Remarque : </gras>Si deux nombres réels 𝑥₁ et 𝑥₂ ont la même image par la fonction ƒ, alors par symétrie, on a <span class="math display">$$α = \frac{x_1+x_2}{2}$$ et $$β = ƒ(α)$$</span>
+</div>
+<h2>Position relative par rapport aux axes du repère</h2><br>
+<strong>Propriété</strong> : La parabole d'équation y=a𝑥²+b𝑥+c (avec a≠0):<br><li>coupe l'axe des <surlign>ordonnés</surlign> au point C(0;c)</li>
+<li>Peut, selon les cas couper l'axe des abscisses en deux points (∆ > 0), un point (∆ = 0) ou aucun point (∆ < 0)</li>
   <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 </body>
