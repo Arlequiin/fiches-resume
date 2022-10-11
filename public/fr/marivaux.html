@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="icon" type="image/x-icon" href="fr-logo.ico">
+</head>
+<body>
+<div class="blurry" id="blurry">
+<div class="popup">
+  🔒<br></br>Cette page est inaccessible au public. Saisissez le mot de passe pour y accéder.
+  <center><input type="password" class="form__field" placeholder="Mot de passe" name="name" id='name' required /></center>
+<script>
+window.addEventListener('keydown', function (e) {
+  if (e.key=="Enter"){
+    let pw=document.getElementById("name").value
+    if (pw=="ionesco"){
+      document.getElementById("blurry").style.height='0';
+    }
+  }
+  
+})
+</script>
+</div>
+  </div>
+  <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="/index.html">Page de garde</a>
+    <a href="/maths.html">Maths</a>
+    <a href="/spc.html">Physique-Chimie</a>
+    <a href="/svt.html">E.S</a>
+    <a href="/nsi.html">N.S.I</a>
+    <a href="/fr.html">Français</a>
+    <a href="/bac.html">Calcul des notes</a>
+  </div>
+
+</div>
+<div id="evaluate" class="evaluate">
+<a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
+<br>
+<br>
+<center><zelda>TIME TO PAIN</zelda></center>
+<br>
+<a id="maintxt">Saisis le texte de la fiche (après l'avoir appris bien-entendu) pour t'évaluer.<br> Vise le score le plus haut!</a>
+<center><textarea placeholder="Les fautes font baisser des points!" id="textarea"></textarea></center>
+<script>
+  document.getElementById("textarea").style.width = "90%";
+  document.getElementById("textarea").style.height = "300px";
+</script>
+<button onclick="Compare_txt(gettext(),fiches.fr[0])" class="button-54">Vérifier</button>
+</div>
+<span onclick="openNav()" class="open">☰</span>
+  <h1>Le Malade Imaginaire (1673)</h1><br>
+  <a href="le-roi-se-meurt.html" class="previous round" id="prev">&#8249; Précédent</a>
+<a href="/fr/malade-imaginaire-texte-3.html" class="next round" id="next">Suivant &#8250;</a><br>
+  <div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
+<div class="tips">Fiche faite avec l'aide de Mme Bartal</div>
+<div class="diplomation">Oeuvre du Parcours (02/20)</div>
+<button class="button-54" onclick="openEv()">SE TESTER</button>
+<h2>Introduction</h2><br>
+<iframe src="malade-imaginaire.pdf#page=8&toolbar=0&navpanes=0&scrollbar=0" width="100%" height="500px">
+    </iframe>
+  <div class="info">
+    <details>
+      <summary>Resumé de l'œuvre</summary>
+    <div class="tips" style="font-size:100%;">En cours</div>
+    </details>
+    To be done
+     </p>
+  
+</body>
+  <br></br>
+  <center><footer> © 2022 Copyright by Mohamed-Badr Benchekroun (known as Arlequiin). All Rights Reserved. </footer></center>
+</html>
