@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="icon" type="/image/x-icon" href="images/fr-logo.ico">
+  <meta property="og:title" content="Fiches Résumés - Arlequiin" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://fiches-resume.arlequiin.repl.co" />
+<meta property="og:image" content="http://my.site.com/images/thumb.png" />
+<meta property="og:description" content="Fiche résumé sur les probabilités" />
+<meta name="theme-color" content="#DEDDAB">
+<meta property="og:site_name" content="Mohamed Badr Benchekroun">
+</head>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+<body onload="loading()">
+<body>
+<div class="blurry" id="blurry">
+  </div>
+  <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <div class="overlay-content">
+    <a href="/index.html">Page de garde</a>
+    <a href="/maths.html">Maths</a>
+    <a href="/spc.html">Physique-Chimie</a>
+    <a href="/svt.html">E.S</a>
+    <a href="/nsi.html">N.S.I</a>
+    <a href="/fr.html">Français</a>
+    <a href="/bac.html">Calcul des notes</a>
+  </div>
+
+</div>
+<div id="evaluate" class="evaluate">
+<a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
+<br>
+<br>
+<center><zelda>TIME TO PAIN</zelda></center>
+<br>
+<a id="maintxt">Saisis le texte de la fiche (après l'avoir appris bien-entendu) pour t'évaluer.<br> Vise le score le plus haut!<br>IMPORTANT : Ne pouvant pas écrire les divisions telles qu'elles, vous devrez écrire avec la <a href="nsi.html">syntaxe python</a> du site, largement inspirée de la syntaxe de langages de programmation</a>
+<center><textarea placeholder="Les fautes font baisser des points!" id="textarea"></textarea></center>
+<script>
+  document.getElementById("textarea").style.width = "90%";
+  document.getElementById("textarea").style.height = "300px";
+</script>
+<button onclick="Compare_txt(gettext(),fiches.maths[0])" class="button-54">Vérifier</button>
+</div>
+<span onclick="openNav()" class="open">☰</span><h1>Mathématiques - Probabilités Conditionnelles</h1><br>
+<a href="fonctions-polynome-du-second-degré-3.html" class="previous round" id="prev">&#8249; Précédent</a>
+<a href="/maths/fonctions-polynome-du-second-degré-2.html" class="next round" id="next">Suivant &#8250;</a><br>
+<div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
+<span onclick="print()"><h2>Imprimer cette page</h2></span><br>
+<div class="info">C'est la première fiche sur les probabilités, si vous souhaitez accéder au sommaire cliquez <gras><a href="sommaire.html">ici</a></gras><br></div>
+<div class="tips">Ce chapître est indépendant des fiches précédentes, vous pouvez donc les sauter.</div>
+<div class="check">S'éxercer régulièrement est la clé de la réussite</div>
+<br>
+<h2>Réalisation d'un événement sous condition</h2><br>
+<strong>Définition</strong> : Soient A et B deux événements de Ω avec P(A) ≠ 0. On note $P_A(B)$ la probabilité de l'événement B <surlign>sachant que</surlign> l'événement A est réalisé. On a: $$P_A(B)=\frac{P(A\cap B)}{P(A)}$$
+<br>
+<h2>Arbre pondéré et probabilités conditionnelles</h2><br>
+<strong>Propriété</strong> : La probabilité d'un chemin complet est égale au <surlign>produit</surlign> des probabilités inscrites sur chaque branche du chemin : c'est le <surlign>principe multiplicatif</surlign>
+  <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { 
+      preferredFont: "TeX", 
+      availableFonts: ["STIX","TeX"], 
+      styles: {".MathJax": {color: "#CCCCCC"}} 
+      }
+});
+</script>
+</body>
+  <br></br>
+  <center><footer> © 2022 Copyright by Mohamed-Badr Benchekroun (known as Arlequiin). Check my <a href="https://github.com/Arlequiin/" style="font-size:150$;">Github!</a>  </footer></center>
+</html>
