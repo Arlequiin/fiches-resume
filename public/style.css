@@ -750,3 +750,6 @@ $gray: #9b9b9b;
 a.five:link {color:#08af7d;text-decoration:none;}
 a.five:visited {color:#268f00;text-decoration:none;}
 a.five:hover {text-decoration:underline;}
+table, th, td {
+  border:1px solid black;
+}
