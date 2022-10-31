@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="icon" type="image/x-icon" href="fr-logo.ico">
+</head>
+<body>
+<div class="blurry" id="blurry">
+<div class="popup">
+  🔒<br></br>Cette page est inaccessible au public. Saisissez le mot de passe pour y accéder.
+  <center><input type="password" class="form__field" placeholder="Mot de passe" name="name" id='name' required /></center>
+<script>
+window.addEventListener('keydown', function (e) {
+  if (e.key=="Enter"){
+    let pw=document.getElementById("name").value
+    if (pw=="ionesco"){
+      document.getElementById("blurry").style.height='0';
+    }
+  }
+  
+})
+</script>
+</div>
+  </div>
+  <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="/index.html">Page de garde</a>
+    <a href="/maths.html">Maths</a>
+    <a href="/spc.html">Physique-Chimie</a>
+    <a href="/svt.html">E.S</a>
+    <a href="/nsi.html">N.S.I</a>
+    <a href="/fr.html">Français</a>
+    <a href="/bac.html">Calcul des notes</a>
+  </div>
+
+</div>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+<div id="evaluate" class="evaluate">
+<a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
+<br>
+<br>
+<center><zelda>TIME TO PAIN</zelda></center>
+<br>
+<a id="maintxt">Saisis le texte de la fiche (après l'avoir appris bien-entendu) pour t'évaluer.<br> Vise le score le plus haut!</a>
+<center><textarea placeholder="Les fautes font baisser des points!" id="textarea"></textarea></center>
+<script>
+  document.getElementById("textarea").style.width = "90%";
+  document.getElementById("textarea").style.height = "300px";
+</script>
+<button onclick="Compare_txt(gettext(),fiches.fr[0])" class="button-54">Vérifier</button>
+</div>
+<span onclick="openNav()" class="open">☰</span>
+  <h1>Les Fleurs du Mal, Baudelaire</h1><br>
+  <a href="le-roi-se-meurt.html" class="previous round" id="prev">&#8249; Précédent</a>
+<a href="/fr/malade-imaginaire-texte-3.html" class="next round" id="next">Suivant &#8250;</a><br>
+  <div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
+<div class="tips">Fiche faite avec l'aide de Mme Bartal</div>
+<div class="diplomation">Pack rattaché à des oeuvres du parcours</div>
+<button class="button-54" onclick="openEv()">SE TESTER</button>
+<h2>Introduction</h2><br>
+<iframe src="Marivaux.pdf#page=8&toolbar=0&navpanes=0&scrollbar=0" width="100%" height="500px">
+    </iframe>
+<div class="info">
+  <details>
+    <summary>L'auteur, Charles Baudelaire</summary>
+  <div class="tips" style="font-size:100%;">Charles Baudelaire, né le 9 avril 1821 à Paris et mort dans la même ville le 31 août 1867, est un poète français.
+<br>Il est surtout connu pour son recueil <em>Les Fleurs du Mal</em> mais également pour avoir traduit les œuvres du romantiste américain Edgar Allan Poe, faisant de fait découvrir ses œuvres à la France, par extension à l'Europe. En 1828, il est révolté par le remariage de sa mère, il n'appréciait pas son beau-père. Il fut un enfant et adolescent difficile. <br>À ses 18 ans, Baudelaire mène une vie dissipée dans la bohème littéraire du quartier latin, pour l'arracher de cette vie, sa famille l'embarque sur un voilier en direction des Indes, il s'arrêtera 10 mois à l'île Bourbon, ce voyage l'aura profondément marqué et l'aura poussé à écrire un grand nombre de poèmes.<br>Baudelaire, à son retour, ayant atteint la majorité demandera sa part de l'héritage paternel. Il se met à dillapider son argent, alarmée par cela sa famille le fait placer sous tutelle. Un conseil judiciaire gèrera ses biens et lui remettra une pension mensuelle.<br>
+<gras>En 1857, Baudelaire publie les Fleurs du Mal</gras> mais il est attaqué en justice et est contraint de payer une amende et retirer des pièces de son recueil.<br>
+Charls Baudelaire mourra en 1867, à cause d'excès d'opium, qu'il prenait pour des raisons médicales. (Drogue pouvant devenir dangereuse bien qu'à usage médicale).
+  </div>
+    </details>
+</div>
+  <h2>Classification des poèmes</h2><br>
+  Les poèmes de Baudelaire, dans l'œuvre intégrale se séparent en 4 thématiques :
+  <ul>
+    <li><strong>LE SPLEEN ET L'IDÉAL</strong> : Le spleen est le mal-être baudelairien, il s'agit d'un état dépressif et morbide ressenti par le poète.</li>
+  </ul>
+  <div class="info">
+   <table style="width:100%;border:1px solid black;border-radius:10px;">
+  <tr>
+    <th>Poème</th>
+    <th>Courant</th>
+    <th>Thémathique</th>
+  </tr>
+  <tr>
+    <td href="/fr/benediction-fdm.html">Bénédiction</td>
+    <td>L'Albatros</td>
+    <td>Élévation</td>
+  </tr>
+  <tr>
+    <td>Le titre constitue un paradoxe, "Bénédiction" alors qu'il n'est question que de malédiction dans les 5 premières strophes. Le poète traitera de religion, et montrera, quelque part, qu'il est un être supérieur car il fait référence aux anges et à Dieu et le poème est truffé de paradoxes, béni et maudit dans le même temps, enfance dure et sublime...</td>
+    <td>L'Albatros est un poème fait de comparaisons et de métaphores visant à comparer l'auteur à l'oiseau. L'Albatros symbolise la grandeur, la splendeur tandis que le détachement du monde matériel, ce qui, chez l'auteur pourrait traduire une supériorité morale et spirituelle.</td>
+    <td>Lorem Ipsum</td>
+  </tr>
+</table>
+  </div>
+     </p>
+  
+</body>
+  <br></br>
+  <center><footer> © 2022 - by Mohamed-Badr Benchekroun (known as Arlequiin).</footer></center>
+</html>
