@@ -753,3 +753,7 @@ a.five:hover {text-decoration:underline;}
 table, th, td {
   border:1px solid black;
 }
+visual {
+  padding:100px;
+  background:#cdad88;
+}
