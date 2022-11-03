@@ -105,7 +105,7 @@ document.addEventListener('keydown', evt => {
 function loading(){
   setTimeout(function() {
     document.getElementById("blurry").style.height = "0%";
-  }, 1500);
+  }, 500);
 }
 /*
 document.addEventListener('keydown', evt => {
