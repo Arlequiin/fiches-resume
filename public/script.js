@@ -219,22 +219,19 @@ function toggleCheck() {
     document.getElementById("darkmode").textContent = "Filtre désactivé";
   }
 }
-
-const fiches = {
-  maths : [
-    "1. Modification ou simplification où b != 0 & k != 0 a*k/b*k = a/b 2.Addition et soustraction où b != 0 a/b+-",
-  ],
-  spc : [
-    "ça sent le brûlé? C'est la combustion de l'oxygène ou celle de tes neurones?",
-  ],
-  svt: [
-    "Étudions des cailloux, c'est fantastique! - Les Spé SVT",
-  ],
-  nsi: [
-    `print("Hello world") magique non?"`,
-  ],
-  fr: [
-    "Le paradis, à n'en pas douter, n'est qu'une immense bibliothèque.",
-  ]
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  } else if (document.exitFullscreen) {
+    document.exitFullscreen();
+  }
 }
+
+document.addEventListener('keydown', evt => {
+    if (evt.key === 'F' || evt.key == 'f') {
+        toggleFullScreen();
+    }
+});
+
+
    
