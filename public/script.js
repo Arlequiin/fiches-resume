@@ -79,12 +79,18 @@ if (pourcentage==100){
   changemaintxt(`${pourcentage}%\n : `+"PERFECTION! J'espère que tu n'as pas triché... C'est pour ton bien")
 }
 }
+let stopTabFunction = function(e) {
+  if (e.keyCode == 9) {
+    e.preventDefault();
+  }
+};
+document.addEventListener('keydown', stopTabFunction);
 //ajouter print pour imprimer les fiches
 function changec(color){
   document.body.style.color = color;
 }
 document.addEventListener('keydown', evt => {
-    if (evt.key === 'Escape') {
+    if (evt.key === 'Escape' || evt.key === 'Tab') {
         let width_nav = (document.getElementById("myNav").style.width);
         if (width_nav == "0%"){
           openNav();
@@ -93,6 +99,7 @@ document.addEventListener('keydown', evt => {
         }
     }
 });
+
 
 
 function loading(){
