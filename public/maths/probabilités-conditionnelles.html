@@ -88,15 +88,21 @@ La probabilité que l'événement B soit réalisé sachant que l'événement A e
 <strong>Propriété</strong> (Règle du produit) : La probabilité d'un chemin est le produit des probabilités rencontrées le long de ce chemin<br>
 <strong>Propriété</strong> (Règle de la somme) : La probabilité d'un événement s'obtient en effectuant la somme des probabilités de <surlign>tous</surlign> les chemins menant à cet événement.
 <br><h2>Formule des probabilités totales</h2><br>
-<strong>Définition : </strong> Une <strong>partition</strong>  de l'univers Ω est un ensemble <surlign>d'événements deux à deux compatibles</surlign> et dont la réunion est Ω (on parle alors de systène complet d'événement)<br>
-<strong>Propriété</strong> : Si $A_1, A_2, ..., A_n$ forment une partition de Ω et sont tous de probabilités nulle :<br>
+<strong>Définition : </strong> Une <strong>partition</strong>  de l'univers Ω est un ensemble <surlign>d'événements deux à deux incompatibles</surlign> et dont la réunion est Ω (on parle alors de système complet d'événement)<br>
+<strong>Propriété</strong> : Si $A_1, A_2, ..., A_n$ forment une partition de Ω et sont tous de probabilités non nulle :<br>
 <ul>
   Pour tout événement B, sa probabilité s'obtient en additionnant les chemins conduisant à la réalisation de B<br>
-  On a donc : $P(B)=P(A_1\cap B) + P(A_1\cap B) +...+P(A_n\cap V)$<br>
+  On a donc : $P(B)=P(A_1\cap B) + P(A_1\cap B) +...+P(A_n\cap B)$<br>
 Remplaçons chaque probabilité $P(A_i\cap B) par P(A_i)\cdot P_A^i(B)$<br>
 <strong>Cas particulier</strong> : A et B étant deux événements, avec $A$ et $\overline{A}$ de probabilité non nulle, on a :<br><center>$P(B) = P(A\cap B)+P(\overline{A} \cap B)$</center>
 </ul><br>
-<h2>Indépendance de deux événements</h2>
+<h2>Indépendance de deux événements</h2><br>
+Dans l'ensemble Ω des issues d'une expérience aléatoire, on considère deux événements A et B de probabilité non nulle. Si $P_A(B) = P(B)$, c'est-à-dire si la réalisation ou non de l'événement A ne modifie pas la probabilité de B, <surlign>On dit que l'événement B est indépendant de l'événement A</surlign><br>
+<strong>Propriétés</strong> :<br>
+<ul>
+  <li>Soient A et B deux événements de probabilités non nulle. 
+ Alors les <surlign>propriétés suivantes sont équivalentes :</surlign><br><ul><li>$P_A(B) = P(B)$</li><li>$P_B(A) = P(A)$</li><li>$P(A\cap B) = P(A)\cdot P(B)$</li></ul></li><li>Deux événements A et B sont indépendants si, et seulement si : $P(A\cap B) = P(A) \cdot P(B)$</li>
+</ul>
   <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 <script type="text/x-mathjax-config">
