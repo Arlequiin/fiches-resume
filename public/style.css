@@ -58,6 +58,9 @@ h1{
   -webkit-text-fill-color: blue;
 }
 
+underline {
+  text-decoration: underline;  
+}
 h2{
   font-family: photograph-sign;
   font-size:150%;
