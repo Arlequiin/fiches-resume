@@ -248,6 +248,12 @@ footer{
   margin-right:10px;
 }
 
+valor1{
+  color:#009980;
+  text-decoration:underline;
+  text-decoration-color
+  font-size:100%;
+}
 .evaluate {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
   height: 100%;
