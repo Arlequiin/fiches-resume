@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="icon" type="image/x-icon" href="fr-logo.ico">
+</head>
+<body>
+<div class="blurry" id="blurry">
+<div class="popup">
+  🔒<br></br>Cette page est inaccessible au public. Saisissez le mot de passe pour y accéder.
+  <center><input type="password" class="form__field" placeholder="Mot de passe" name="name" id='name' required /></center>
+<script>
+window.addEventListener('keydown', function (e) {
+  if (e.key=="Enter"){
+    let pw=document.getElementById("name").value
+    if (pw=="ionesco"){
+      document.getElementById("blurry").style.height='0';
+    }
+  }
+  
+})
+</script>
+</div>
+  </div>
+  <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="/index.html">Page de garde</a>
+    <a href="/maths.html">Maths</a>
+    <a href="/spc.html">Physique-Chimie</a>
+    <a href="/svt.html">E.S</a>
+    <a href="/nsi.html">N.S.I</a>
+    <a href="/fr.html">Français</a>
+    <a href="/bac.html">Calcul des notes</a>
+  </div>
+
+</div>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+<div id="evaluate" class="evaluate">
+<a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
+<br>
+<br>
+<center><zelda>TIME TO PAIN</zelda></center>
+<br>
+<a id="maintxt">Saisis le texte de la fiche (après l'avoir appris bien-entendu) pour t'évaluer.<br> Vise le score le plus haut!</a>
+<center><textarea placeholder="Les fautes font baisser des points!" id="textarea"></textarea></center>
+<script>
+  document.getElementById("textarea").style.width = "90%";
+  document.getElementById("textarea").style.height = "300px";
+</script>
+<button onclick="Compare_txt(gettext(),fiches.fr[0])" class="button-54">Vérifier</button>
+</div>
+<span onclick="openNav()" class="open">☰</span>
+  <h1>Les Fleurs du Mal, Baudelaire</h1><br>
+  <div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
+<div class="tips">Fiche faite avec l'aide de Mme Bartal</div>
+<div class="diplomation">Pack rattaché à des oeuvres du parcours</div>
+<h2>Citations de Socrate</h2><br>
+<div class="diplomation">
+<gras>Socrate (-400 BCE)</gras>
+<ul>
+  <li>“Je ne suis ni Athénien, ni Grec, mais un citoyen du monde.”</li>
+  <li>“Dans tous les cas, mariez-vous. Si vous tombez sur une bonne épouse, vous serez heureux ; et si vous tombez sur une mauvaise, vous deviendrez philosophe, ce qui est excellent pour l’homme.”</li>
+  <li>“Tout ce que je sais, c’est que je ne sais rien.”</li>
+  <li>“Un trésor de belles maximes est préférable à un amas de richesses.”</li>
+  <li>“Que voulez-vous que je lui apprenne ? Il ne m'aime pas. ”</li>
+  <li>“Si un âne te donne un coup de pied, ne lui rends pas. ”</li>
+  <li>“Il n'y a point de travail honteux.”</li>
+  <li>“Rien n'est trop difficile pour la jeunesse.”</li>
+  <li>“Le bonheur c'est le plaisir sans remords. ”</li>
+  <li>“Mieux vaut encore subir l'injure que la commettre. ”</li>
+  <li>“Un homme doit-il se marier ? Quoi qu'il fasse, il se repentira.”</li>
+  <li>“Nos jeunes aiment le luxe, ont de mauvaises manières, se moquent de l’autorité et n’ont aucun respect pour l’âge. À notre époque, les enfants sont des tyrans.”</li>
+  <li>“L’âme déréglée est comme un tonneau percé à cause de sa nature insatiable.”</li>
+  <li>“Le temps malgré tout a trouvé la solution malgré toi.”</li>
+  <li>“On compte plus facilement ses moutons que ses amis.”</li>
+  <li>“Ce qui fait l'homme, c'est sa grande faculté d'adaptation.”</li>
+  <li>“Vous pouvez cacher aux autres une action répréhensible, mais jamais à vous-même.”</li>
+  <li>“Nul n’est méchant volontairement.”</li>
+  <li>“Le mal vient de ce que l’homme se trompe au sujet du bien.”</li>
+  <li>“Une vie sans examen ne vaut pas la peine d’être vécue.”</li>
+  <li>“Ceux qui désirent le moins de choses sont les plus près des dieux.”</li>
+  <li>“Existe-t-il pour l'homme un bien plus précieux que la Santé ?”</li>
+  <li>“La première clé de la grandeur est d'être en réalité ce que nous semblons être.”</li>
+  <li>“Nous ne nous approchons de la vérité que dans la mesure où nous nous éloignons de la vie.”</li>
+  <li>“Les gens qu'on interroge, pourvu qu'on les interroge bien, trouvent d'eux-mêmes les bonnes réponses. ”</li>
+  <li>“La sagesse commence dans l’émerveillement.”</li>
+</ul>
+</div>
+<h2>Citations de Voltaire</h2><br>
+<div class="diplomation">
+<gras>Voltaire (XVIIIe siècle)</gras>
+<ul>
+<li>“La politique est le premier des arts et le dernier des métiers.”</li>
+<li>“La loi naturelle est l’instinct qui nous fait sentir la justice.”</li>
+<li>
+“N’est-il pas honteux que les fanatiques aient du zèle et que les sages n’en aient pas ?”</li>
+  <li>“J’ai fait un peu de bien, c’est mon meilleur ouvrage.”</li>
+  <li>“La grande affaire et la seule qu’on doive avoir, c’est de vivre heureux.”</li>
+  <li>“L’homme est né pour l’action, comme le feu tend en haut et la pierre en bas.”</li>
+  <li>“Le premier pas, mon fils, que l’on fait dans le monde Est celui dont dépend le reste de nos jours.”</li>
+  <li>“L’univers m’embarrasse et je ne puis songer que cette horloge existe et n’ait pas d’horloger.”</li>
+  <li>“L’intérêt que j’ai à croire une chose n’est pas une preuve de l’existence de cette chose.”</li>
+  <li>“Rien ne se fait sans un peu d’enthousiasme.”</li>
+  <li>“L’espèce humaine est la seule qui sache qu’elle doit mourir.”</li>
+  <li>“Il vaut mieux hasarder de sauver un coupable que de condamner un innocent.”</li>
+  <li>“Dieu n’a créé les femmes que pour apprivoiser les hommes.”</li>
+  <li>"L'art de la médecine consiste à distraire le malade pendant que la nature le guérit."</li>
+  <li>"Ciel, que le temps est un bien précieux !"</li>
+</ul>
+</div>
+
+<h2>Citations de Platon</h2>
+<div class="diplomation">
+<gras>Platon (-400 BCE)</gras>
+<ul>
+<underline>Médecine</underline>
+<li>"Se connaître soi-même, c'est connaître son âme ; donc, le médecin, qui connaît le corps, ne se connaît pas soi-même en tant que médecin ; il connaît seulement une chose qui lui appartient."</li>
+<li>On ne peut guérir la partie sans soigner le tout. On ne doit pas soigner le corps séparé de l'âme, et pour que l'esprit et le corps retrouvent la santé, il faut commencer par soigner l'âme. Car c'est une erreur fondamentale des médecins d'aujourd'hui : séparer dès l'abord l'âme et le corps.</li>
+<underline>Amour</underline>
+<li>Touché par l'amour tout homme devient poète.</li>
+  <li>L'amour est aveugle</li>
+</ul>
+</div>
+<h2>Citations par thèmes</h2>
+<div class="diplomation">
+  <gras>Tempus Fugit</gras>
+  <li>Les sabliers ne servent pas seulement à nous rappeler la fuite du temps, ils servent également à évoquer la poussière que nous deviendrons un jour. - Georg Christoph Lichtenberg</li>
+  <li>C'est à tort que les Hommes se plaignent de la fuite du temps, en l'accusant d'être trop rapide sans voir qu'il s'écoule à la bonne vitesse - Leonardo de Vinci</li>
+</div>
+     </p>
+  
+</body>
+  <br></br>
+  <center><footer> © 2022 - Mohamed Badr benchekroun</footer></center>
+</html>
