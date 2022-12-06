@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="icon" type="/image/x-icon" href="images/fr-logo.ico">
+  <meta property="og:title" content="Fiches Résumés - Arlequiin" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://fiches-resume.arlequiin.repl.co" />
+<meta property="og:image" content="http://my.site.com/images/thumb.png" />
+<meta property="og:description" content="Fiche résumé sur les probabilités" />
+<meta name="theme-color" content="#DEDDAB">
+<meta property="og:site_name" content="Mohamed Badr Benchekroun">
+</head>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+<body onload="loading()">
+<body>
+<div class="blurry" id="blurry">
+  </div>
+  <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <div class="overlay-content">
+    <a href="/index.html">Page de garde</a>
+    <a href="/maths.html">Maths</a>
+    <a href="/spc.html">Physique-Chimie</a>
+    <a href="/svt.html">E.S</a>
+    <a href="/nsi.html">N.S.I</a>
+    <a href="/fr.html">Français</a>
+    <a href="/bac.html">Calcul des notes</a>
+  </div>
+
+</div>
+<div id="evaluate" class="evaluate">
+<a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
+<br>
+<script>
+  document.addEventListener('keydown', evt => {
+    if (evt.key === 'F' || evt.key == 'f') {
+        toggleFullScreen();
+    }
+});
+</script>
+<br>
+<center><zelda>TIME TO PAIN</zelda></center>
+<br>
+<a id="maintxt">Saisis le texte de la fiche (après l'avoir appris bien-entendu) pour t'évaluer.<br> Vise le score le plus haut!<br>IMPORTANT : Ne pouvant pas écrire les divisions telles qu'elles, vous devrez écrire avec la <a href="nsi.html">syntaxe python</a> du site, largement inspirée de la syntaxe de langages de programmation</a>
+<center><textarea placeholder="Les fautes font baisser des points!" id="textarea"></textarea></center>
+<script>
+  document.getElementById("textarea").style.width = "90%";
+  document.getElementById("textarea").style.height = "300px";
+</script>
+<button onclick="Compare_txt(gettext(),fiches.maths[0])" class="button-54">Vérifier</button>
+</div>
+<span onclick="openNav()" class="open">☰</span><h1>Mathématiques - Fonctions Dérivées</h1><br>
+<a href="fonctions-polynome-du-second-degré-3.html" class="previous round" id="prev">&#8249; Précédent</a>
+<a href="/maths/fonctions-polynome-du-second-degré-2.html" class="next round" id="next">Suivant &#8250;</a><br>
+<div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
+<span onclick="print()"><h2>Imprimer cette page</h2></span><br>
+<div class="info">Fiche sur les fonctions dérivées, cliquez<a href="sommaire.html">ici</a> pour accéder au sommaire.<br></div>
+<div class="warn">La fiche précédente est indispensable.</div>
+<div class="check">S'éxercer régulièrement est la clé de la réussite</div>
+<br>
+<h2>Notion de fonction dérivée</h2><br>
+<strong>Définition</strong> : Soit ƒ une fonction définie sur un intervalle Ι. Si ƒ est dérivable en tout réel $a$ de Ι, on dit que ƒ est <surlign>dérivable sur l'intervalle Ι</surlign>. La fonction qui a tout réel $x$ associe le nombre dérivé $f'(x)$ est appelé <surlign>fonction dérivée de ƒ.</surlign> (ou dérivée de ƒ). On la note $f'$.<br>
+<h2>Fonctions dérivées des fonctions usuelles</h2><br>
+<div class="diplomation">
+  <table>
+<tbody>
+<tr>
+<td>&nbsp;Fonction</td>
+<td>$&fnof;(x)$&nbsp;</td>
+<td>D&eacute;rivable sur&nbsp;</td>
+<td>$f'(x)$&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;Constante</td>
+<td>$f(x)=p$&nbsp;</td>
+<td>$\mathbb{R} $</td>
+<td>$f'(x)=0$&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;Identit&eacute;</td>
+<td>$f(x)=x$&nbsp;</td>
+<td>$\mathbb{R}$</td>
+<td>$f'(x)=1$&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;Carr&eacute;</td>
+<td>$f(x)=x^2$&nbsp;</td>
+<td>$\mathbb{R}$&nbsp;</td>
+<td>$f'(x)=2x$&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;Cube</td>
+<td>$f(x)=x^3$&nbsp;</td>
+<td>$\mathbb{R}$&nbsp;</td>
+<td>$f'(x)=3x^2$&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;Puissance</td>
+<td>$f(x)=x^n$</td>
+<td>$\mathbb{R}$</td>
+<td>$f'(x)=nx^{n-1}$</td>
+<tr>
+<td>Puissance inverse</td>
+<td>$f(x)=\frac{1}{x^n}$</td>
+<td>$\mathbb{R}$\{$0$}</td>
+<td>$f'(x)=-\frac{n}{x^{n+1}}$</td>
+</tr>
+<tr>
+<td>Racine carrée</td>
+<td>$f(x)=\sqrt{x}$</td>
+<td>$\mathbb{R}$$\underset{+}{*}$</td>
+<td>$f'(x)=\frac{1}{2\sqrt{x}}$</td>
+</tr>
+</tbody>
+</table><br>
+</div>
+<h2>Dérivée d'une somme, d'un produit par une constante réelle</h2><br>
+Soit $u$ et $v$ deux fonctions définies et dérivables sur un même invervalle Ι et $k$ une constante réelle.<br>
+<strong>Propriété</strong> : <surlign>Dérivée de u
+  ±v</surlign><br>
+La fonction somme $u+v$ définie sur Ι, on a:<br>$(u
+  ±v)'(x)=u'(x)
+  ±v'(x)$<br>
+<h2>Dérivée d'un produit par une constante réelle</h2><br>
+<strong>Propriété</strong> : <surlign>La dérivée de $k\cdot u$</surlign><br>
+La fonction $ku$ définie sur Ι par $x\to k\cdot u(x)$ est dérivable sur Ι et, pour tout réel $x$ de Ι, on a:<br>$(ku)'(x)=k\cdot u'(x)$
+<br><h2>Dérivée du produit de deux fonctions</h2><br>
+  <strong>Propriété</strong> : Soient $u$ et $v$ deux fonctions définies et dérivables sur un intervalle Ι. Alors la fonction produit $u\cdot v$ définie sur Ι par : $x\to u(x)\cdot v(x)$ est dérivable sur Ι et, pour tout réel $x$ de Ι, on a:<br>
+$(u\cdot v)'(x)=u'(x)\cdot v(x)+u(x)\cdot v'(x)$<br>
+<h2>Dérivée du quotient de deux fonctions</h2><br>
+<strong>Propriété : </strong>Soient
+  <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { 
+      preferredFont: "TeX", 
+      availableFonts: ["STIX","TeX"], 
+      styles: {".MathJax": {color: "#CCCCCC"}} 
+      }
+});
+</script>
+</body>
+  <br></br>
+  <center><footer> © 2022 - Mohamed-Badr Benchekroun (known as Arlequiin). Check my <a href="https://github.com/Arlequiin/" style="font-size:150$;">Github!</a>  </footer></center>
+</html>

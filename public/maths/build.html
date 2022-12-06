@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="icon" type="/image/x-icon" href="images/fr-logo.ico">
+  <meta property="og:title" content="Fiches Résumés - Arlequiin" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://fiches-resume.arlequiin.repl.co" />
+<meta property="og:image" content="http://my.site.com/images/thumb.png" />
+<meta property="og:description" content="Fiche résumé sur les fonctions polynôme du second degré, Partie 1" />
+<meta name="theme-color" content="#DEDDAB">
+<meta property="og:site_name" content="Mohamed Badr Benchekroun">
+</head>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+<body onload="loading()">
+<body>
+
+<h1>Tests</h1>
+<textarea style="width:100%;" id="inputtextarea"></textarea>
+<p id="out"></p>
+
+<script>
+function createItem(txt) {
+  localStorage.setItem(txt);
+}
+
+function readValue(txt) {
+  let x = localStorage.getItem(txt);
+  document.getElementById("out").innerHTML = x;
+}
+  
+document.querySelector('textarea').addEventListener('input', function (event) {
+  document.getElementById("out").innerHTML=(event.target.value);
+  
+});
+
+</script>
+  <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { 
+      preferredFont: "TeX", 
+      availableFonts: ["STIX","TeX"], 
+      styles: {".MathJax": {color: "#CCCCCC"}} 
+      }
+});
+</script>
+</body>
+</html>

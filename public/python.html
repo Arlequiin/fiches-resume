@@ -19,15 +19,31 @@ Interpréteur Python par <a href="https://trinket.io">trinket</a>
 <textarea style="width:100%;"></textarea>
 <script>
 document.querySelector('textarea').addEventListener('input', function (event) {
-  document.getElementById("out").innerHTML="$$"+(event.target.value)+"$$";
+  document.getElementById("out").textContent="$"+(event.target.value)+"$";
   
 });
 </script>
-<span class="math display" id="out">$$0$$</span>
-$$0$$
-<iframe src="https://pronote.lycee-descartes.ac.ma/eleve.html?fd=1&identifiant=3dED5qQVH5BbxNGJ" title="W3Schools Free Online Web Tutorials">
-</iframe>
-<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+<p id="out">$0$</p>
+
+  <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { 
+      preferredFont: "TeX", 
+      availableFonts: ["STIX","TeX"], 
+      styles: {".MathJax": {color: "#CCCCCC"}} 
+      }
+});
+</script>
 </script>
 </html>
-<center><footer> © 2022 - Mohamed Badr Benchekroun (known as Arlequiin).</footer></center>
+<center><footer> © 2022 - Mohamed Badr Benchekroun (known as αρλ).</footer></center>

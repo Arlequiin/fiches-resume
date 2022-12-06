@@ -226,12 +226,12 @@ function toggleFullScreen() {
     document.exitFullscreen();
   }
 }
-
+/*
 document.addEventListener('keydown', evt => {
     if (evt.key === 'F' || evt.key == 'f') {
         toggleFullScreen();
     }
 });
-
+*/
 
    
