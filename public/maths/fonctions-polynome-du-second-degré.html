@@ -8,7 +8,7 @@
   <link href="/style.css" rel="stylesheet" type="text/css" />
   <script src="/script.js"></script>
   <link rel="icon" type="/image/x-icon" href="images/fr-logo.ico">
-  <meta property="og:title" content="Fiches Résumés - Arlequiin" />
+  <meta property="og:title" content="Fiches Résumés - αρλ" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://fiches-resume.arlequiin.repl.co" />
 <meta property="og:image" content="http://my.site.com/images/thumb.png" />
@@ -19,6 +19,13 @@
 <body oncopy="return false" oncut="return false" onpaste="return false">
 <body onload="loading()">
 <body>
+<script>
+  document.addEventListener('keydown', evt => {
+    if (evt.key === 'F' || evt.key == 'f') {
+        toggleFullScreen();
+    }
+});
+</script>
 <div class="blurry" id="blurry">
   </div>
   <div id="myNav" class="overlay">
@@ -113,5 +120,5 @@ Donc, en identifiant les coefficients des deux écritures ont obtient:
 </script>
 </body>
   <br></br>
-  <center><footer> © 2022 Mohamed Badr Benchekroun (known as Arlequiin).</footer></center>
+  <center><footer> © 2022 Mohamed Badr Benchekroun (known as αρλ).</footer></center>
 </html>

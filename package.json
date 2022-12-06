@@ -92,13 +92,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Arlequiin/fiches-resume.git"
+    "url": "git+https://github.com/αρλ/fiches-resume.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Arlequiin/fiches-resume/issues"
+    "url": "https://github.com/αρλ/fiches-resume/issues"
   },
-  "homepage": "https://github.com/Arlequiin/fiches-resume#readme"
+  "homepage": "https://github.com/αρλ/fiches-resume#readme"
 }

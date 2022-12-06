@@ -29,7 +29,13 @@
     <a href="fr.html">Français</a>
     <a href="bac.html">Calcul des notes</a>
   </div>
-
+<script>
+  document.addEventListener('keydown', evt => {
+    if (evt.key === 'F' || evt.key == 'f') {
+        toggleFullScreen();
+    }
+});
+</script>
 </div>
 <div id="evaluate" class="evaluate">
 <a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
@@ -112,5 +118,5 @@ Opérations sur les <strong>puissances</strong>
 </script>
 </body>
   <br></br>
-  <center><footer> © 2022 - Mohamed-Badr Benchekroun (known as Arlequiin).</footer></center>
+  <center><footer> © 2022 - Mohamed-Badr Benchekroun (known as αρλ).</footer></center>
 </html>

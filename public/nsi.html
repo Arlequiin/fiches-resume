@@ -63,24 +63,24 @@
   Laissez-moi deviner, vous êtes ici parce que vous avez peur d'avoir de terribles notes en NSI à la rentrée ? Ou juste parce que vous passez en Terminale, vous pigez rien au Python et vous espérez vous améliorer en l'espace de quelques semaines. Vous êtes au bon endroit!<br>Ici, fi de la théorie! Que de la pratique, si vous voulez comprendre ce qu'est le langage Python comment ça fonctionne et j'en passe, allez voir ailleurs, <a href="https://zestedesavoir.com/tutoriels/2514/un-zeste-de-python/1-premiers-pas/1-presentation/#1-1-presentation">ici par exemple</a>. Bien, ne perdons pas plus de temps.
 <br><h2>Introduction</h2>
 Sans trop rentrer dans la théorie, qu'est-ce que le code ? C'est tout simplement une recette sous forme de texte dont l'ordinateur se sert pour cuisiner, voyez-vous, quand vous cuisinez, il y a des choses que vous ne mettez pas dans l'assiette mais que vous avez utilisé, l'assiette est que la face visible de l'iceberg. En programmation, c'est à vous de choisir ce qui doit être visible. Si vous voulez afficher un élément, il faudra utiliser la fonction <code>print()</code>. Vous pouvez tout afficher avec, on s'en servira PARTOUT!
-<script src="https://gist.github.com/Arlequiin/8bc7bb7b6f6d584ed94951582a8632f6.js"></script>
+<script src="https://gist.github.com/αρλ/8bc7bb7b6f6d584ed94951582a8632f6.js"></script>
 Ce premier programme renvoie <br>
 <code>Hello world</code><petit>si vous êtes curieux et que vous voulez savoir pourquoi Hello world et pas un autre mot, lisez-donc <a href='https://en.wikipedia.org/wiki/"Hello,_World!"_program#History'>ceci</a>.</petit><br>
 <h2>Les Types</h2>
 <br>Hello world, c'est quoi ? C'est simplement un texte, qu'on appellera en programmation <code>string</code> ou encore chaîne de caractère (array of chars). Les strings sont encerclés par des guillemets, il y a différentes méthodes pour mettre vos guillements, vous pouvez en mettre un seul (<code>'</code>), mais vous remarquerez qu'avec un seul guillement ça marche pas quand vous tentez de faire un <code>print('J'aime les glaçons')</code>, c'est très simple, le programme est confus, il pense que votre string ne contient qu'un J, le reste, il sait pas ce que c'est du coup il renvoie des erreurs. Dites vous que votre compilateur est comme une personne psychorigide qui se tire une balle dès que vous faites une faute d'ortographe, ici, c'est pas une faute d'orthographe mais une faute de <strong>syntaxe</strong>. Solution, mettre des doubles guillements (<code>"</code>). Et si jamais vous voulez mettre des doubles-guillements dans votre string, vous aurez le même problème, ici la solution sera de mettre des triples-guillements (<code>'''</code>). Il est possible de concaténer des strings pour former des phrases ou des mots par exemple.
-<script src="https://gist.github.com/Arlequiin/7670b08bffd85d95e05055a3ed4aaa5f.js"></script>
+<script src="https://gist.github.com/αρλ/7670b08bffd85d95e05055a3ed4aaa5f.js"></script>
 <strong>L'output</strong> est la sortie du programme, ce qu'il renvoit dans la console.
 <code>#</code> permet de faire des annotations, tout bout de code précédé par ce caractère sera ignoré durant l'éxecution, cela peut s'avérer très pratique, entre autres pour prendre des notes. Exemple concret :
-<script src="https://gist.github.com/Arlequiin/871c1017ca26f817f650aadcfc9e1d6f.js"></script>
+<script src="https://gist.github.com/αρλ/871c1017ca26f817f650aadcfc9e1d6f.js"></script>
 Après les strings, y a les nombres. Les nombres, c'est un peu différent parce qu'on ne met pas de guillements. On distingue les <code>int</code> (integer, de l'anglais, se traduisant par entier), c'est, basiquement tous les nombres relatifs. <br></br>Puis, il y a les <code>float</code>, c'est tous les autres nombres, même si ça semble évident je vais le préciser ; <surlign>int ⊂ float</surlign> et la réciproque est fausse. Un string peut contenir des chiffres, mais va les gérer différement (vous allez comprendre de quoi je parle quand on passera aux opérateurs), il est impossible de concaténer un string et un float/int. Il est possible d'effectuer des opérations avec les float/int.
-<script src="https://gist.github.com/Arlequiin/c58ec4fa27adb03afbe932c152fecfe5.js"></script>
+<script src="https://gist.github.com/αρλ/c58ec4fa27adb03afbe932c152fecfe5.js"></script>
 En convertissant un <code>int</code> en <code>float</code>, il va se taper un <code>.0</code>, et à l'inverse, en convertissant un <code>float</code> en <code>int</code>, ça supprimera simplement ses décimales pour faire un nombre entier, sans l'arrondir, c'est pour ça que 1.7 se transforme en 1 et non en 2. Si vous voulez arrondir, il y a une fonction pour nommée <code>round()</code>.
 Je vous laisse tester tout cela par vous-même.
 <iframe src="https://trinket.io/embed/python/edd948bf08" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 Il reste deux types que je laisserai pour plus tard, les <strong>listes</strong> et les <strong>dictionnaires</strong> <petit>(simplement parce que je n'ai pas encore abordé la notion de variable et cette dernière est indispensable pour comprendre les listes et les dictionnaires).</petit>
 <br><h2>Les variables</h2>
 Vous pouvez faire un truc totalement génial, c'est stocker un int, un float ou encore un string dans une variable (et bien d'autres mais c'est pour plus tard) dans une boîte. Les variables sont indispensables pour programmer, on ne peut pas nous en passer. Plutôt que d'écrire 5 lignes que vous lirez à moitié endormis sur votre lit je vais vous montrer un exemple :
-<script src="https://gist.github.com/Arlequiin/c7cc31ab1f0247916ab8bed6dc38e4b0.js"></script>
+<script src="https://gist.github.com/αρλ/c7cc31ab1f0247916ab8bed6dc38e4b0.js"></script>
 On peut donner n'importe quel nom à notre variable du moment qu'il ne commence pas par un chiffre et qu'il ne contient pas d'accent / caractère non-ascii (genre ℜ ou ⊗)
 <div class="info"><gras>Note : </gras>Il est possible de nommer des variables ainsi dans les dernières versions de Python.</div>
 Il est possible de modifier le contenu de la boîte, le supprimer, le remplacer, l'incrémenter, le décrémenter... bref t'as compris c'est génial les variables.
@@ -91,5 +91,5 @@ Stocker un chiffre dans une variable puis stocker une phrase de votre choix. Aff
 <div class="tips">Conseil : Si tu n'y arrives pas réessaye jusqu'à y arriver.</div>
 </body>
   <br></br>
-  <center><footer> © 2022 - by Mohamed Badr Benchekroun (known as Arlequiin).</footer></center>
+  <center><footer> © 2022 - by Mohamed Badr Benchekroun (known as αρλ).</footer></center>
 </html>

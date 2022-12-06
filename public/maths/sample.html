@@ -8,7 +8,7 @@
   <link href="/style.css" rel="stylesheet" type="text/css" />
   <script src="/script.js"></script>
   <link rel="icon" type="/image/x-icon" href="images/fr-logo.ico">
-  <meta property="og:title" content="Fiches Résumés - αρλ" />
+  <meta property="og:title" content="Fiches Résumés - Arlequiin" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://fiches-resume.arlequiin.repl.co" />
 <meta property="og:image" content="http://my.site.com/images/thumb.png" />
@@ -59,8 +59,8 @@
 <button onclick="Compare_txt(gettext(),fiches.maths[0])" class="button-54">Vérifier</button>
 </div>
 <span onclick="openNav()" class="open">☰</span><h1>Mathématiques - Nombres Dérivés</h1><br>
-<a href="probabilités-conditionnelles.html" class="previous round" id="prev">&#8249; Précédent</a>
-<a href="/maths/fonctions-dérivées.html" class="next round" id="next">Suivant &#8250;</a><br>
+<a href="fonctions-polynome-du-second-degré-3.html" class="previous round" id="prev">&#8249; Précédent</a>
+<a href="/maths/fonctions-polynome-du-second-degré-2.html" class="next round" id="next">Suivant &#8250;</a><br>
 <div class="settings">
 <div>
 <a75 id="darkmode">Noir et Blanc :</a75>
@@ -79,34 +79,7 @@
 <div class="tips">Ce chapître est indépendant des fiches précédentes, vous pouvez donc les sauter.</div>
 <div class="check">S'éxercer régulièrement est la clé de la réussite</div>
 <br>
-<div class="tips">$\frac{f(b)-f(a)}{b-a}=\frac{y_B-y_A}{x_B-x_A}=\frac{Δy}{Δx}$</div>
-<h2>Notion de nombre dérivé</h2><br>
-<strong>Définition</strong> : On considère la fonction ƒ définie sur un intervalle I. Soient $a$ un nombre réel de l'intervalle I et h un réel non nul tel que $a+h \in I$<br>On dit que la fonction est <surlign>dérivable</surlign> en a lorsque le taux de variation de ƒ entre les réels a et a+h se rapproche d'un nombre réel $L$ quand $h$ se rapproche de 0.<br>
-Le réel $L$, limite du taux de variation lorsque $h$ tend vers 0, est appelé <valor1>nombre dérivé</valor1> de la fonction ƒ en $a$. On le note $f'(a)$. On écrit :<br>
-$f'(a)=	\underset{h \to 0}{lim} \frac{f(a+h)-f(a)}{h}$<br>
-<h2>Notion de tangente</h2><br>
-On considère une fonction ƒ définie sur un intervalle <gras>I</gras>, $a$ un réel de cet intervalle et C la courbe représentative de la fonction ƒ.
-<br><strong>Définition</strong> : On suppose que ƒ est dérivable en a ;<br>
 
-  On note $A$ le point de coordonnées $(a;f(a))$ et $M$ le point de $C$ d'abscisse $a+h$, $h$ étant un réel non nul tel que $a+h \in I$<br>
-  La droite $(AM)$ est une <surlign>sécante à la courbe</surlign> $C$. Son coefficient directeur est égal à :<br><strong>$τ(h)=\frac{f(a+h)-f(a)}{h}$</strong><br>
-Lorsque $M$ décrit la courbe $C$ (avec $M≠A$), on obtient un <surlign>faisceau de sécantes passant par</surlign> A à la courbe $C$.
-<br><br><br>
-  Puisque ƒ est dérivable en a, on a 	$\lim_{h \to 0}$ τ$(x)=f'(x)$. La droite T passant par A et de coefficient directeur $f'(a)$, se conçoit comme <surlign>"la position limites" des sécantes</surlign> $(AM)$ lorsque $M$ se rapproche de $A$.<br>
-Cette droite T est appelée <surlign>tangente à la courbe C au point d'abscisse a.</surlign>
-<br><br><br>
-<strong>Définition</strong> : Si ƒ est dérivable en $a$ ($f'(a)≠0$), la <valor1>tangeante</valor1> à la courbe C au point $A(a;f(a))$ est la droite passant par $A$ et de coefficient directeur $f'(a)$<br>
-<h2>Équation réduite de la tangente</h2><br>
-<strong>Propriété</strong> : Soit ƒ une fonction définie sur un intervalle $I$ et dérivable en un réel $a$ de cet intervalle. On note C sa courbe représentative.<br>L'équation réduite de la <valor1>tangente</valor1> à la courbe C au point $A(a;ƒ(a))$ est :<br>$y = f'(a)(x-a)+f(a)$
-<div class="info">
-  <gras>Démonstration : </gras><br>
-  La tangente en A à la courbe C au point d'abscisse a admet une équation de la forme $y = mx+p$ où $m$ et $p$ sont deux constantes à déterminer.<br>
-  Par définition : $m=f'(a)$. Ainsi, l'équation réduite de τ est : $y=f'(a)x+p$<br>De plus, la tangeante Τ passe par le point $A(a;f(a))$ donc ses coordonnées vérifient l'équation précédente soit : $f(a)=f'(a)\cdot a+p$<br>
-<annotation>(par passage d'un terme à l'autre dans l'équation de la droite)</annotation> On en déduit que $p=f(a)-f'(a)\cdot a$.<br>L'équation réduite de la droite s'écrit alors :<br>$y=f'(a)\cdot a+p$<br>C'est-à-dire $y=f'(a)(x-a)+f(a)$
-</div>
-<div class="tips">
-  Lorsque le nombre dérivé d'une fonction ƒ est nul en un réel $a$, alors la tangente à la courbe ƒ au point d'abscisse $a$ est parallèle à l'axe des abscisses (on dit alors que la tangente est horizontale).<br>L'équation réduite de la tangente est alors $y=f(a)$
-</div>
   <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 <script type="text/x-mathjax-config">
@@ -128,5 +101,5 @@ MathJax.Hub.Config({
 </script>
 </body>
   <br></br>
-  <center><footer> © 2022 - Mohamed-Badr Benchekroun (known as αρλ). Check my <a href="https://github.com/αρλ/" style="font-size:150$;">Github!</a>  </footer></center>
+  <center><footer> © 2022 - Mohamed-Badr Benchekroun (known as Arlequiin). Check my <a href="https://github.com/Arlequiin/" style="font-size:150$;">Github!</a>  </footer></center>
 </html>
