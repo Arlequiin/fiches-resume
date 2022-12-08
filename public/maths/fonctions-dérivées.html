@@ -15,6 +15,9 @@
 <meta property="og:description" content="Fiche résumé sur les probabilités" />
 <meta name="theme-color" content="#DEDDAB">
 <meta property="og:site_name" content="Mohamed Badr Benchekroun">
+  <script src="https://unpkg.com/mathjs@11.5.0/lib/browser/math.js"></script>
+
+    <script src="https://cdn.plot.ly/plotly-1.35.2.min.js"></script>
 </head>
 <body oncopy="return false" oncut="return false" onpaste="return false">
 <body onload="loading()">
@@ -59,7 +62,7 @@
 <button onclick="Compare_txt(gettext(),fiches.maths[0])" class="button-54">Vérifier</button>
 </div>
 <span onclick="openNav()" class="open">☰</span><h1>Mathématiques - Fonctions Dérivées</h1><br>
-<a href="fonctions-polynome-du-second-degré-3.html" class="previous round" id="prev">&#8249; Précédent</a>
+<a href="nombres-dérivés.html" class="previous round" id="prev">&#8249; Précédent</a>
 <a href="/maths/fonctions-polynome-du-second-degré-2.html" class="next round" id="next">Suivant &#8250;</a><br>
 <div class="settings">
 <div>
@@ -135,6 +138,38 @@
 </tbody>
 </table><br>
 </div>
+<div class="check">
+  <table>
+    <tr>
+      <td>Fonction ƒ</td>
+      <td>Dérivée ƒ'</td>
+    </tr>
+    <tr>
+      <td>$u+v$</td>
+      <td>$u'+v'$</td>
+    </tr>
+    <tr>
+      <td>$k\cdot u$</td>
+      <td>$k\cdot u'$</td>
+    </tr>
+    <tr>
+      <td>$u\cdot v$</td>
+      <td>$u'v+uv'$</td>
+    </tr>
+    <tr>
+      <td>$\frac{1}{v}$</td>
+      <td>$-\frac{v'}{v^2}$</td>
+    </tr>
+    <tr>
+    <td>$\frac{u}{v}$</td>
+      <td>$\frac{u'v-uv'}{v^2}$</td>
+    </tr>
+    <tr>
+      <td>$f(x)=g(ax+b)$</td>
+      <td>$f(x)=a\cdot g'(ax+b)$</td>
+    </tr>
+  </table>
+</div>
 <h2>Dérivée d'une somme, d'un produit par une constante réelle</h2><br>
 Soit $u$ et $v$ deux fonctions définies et dérivables sur un même invervalle Ι et $k$ une constante réelle.<br>
 <strong>Propriété</strong> : <surlign>Dérivée de u
@@ -147,9 +182,39 @@ La fonction somme $u+v$ définie sur Ι, on a:<br>$(u
 La fonction $ku$ définie sur Ι par $x\to k\cdot u(x)$ est dérivable sur Ι et, pour tout réel $x$ de Ι, on a:<br>$(ku)'(x)=k\cdot u'(x)$
 <br><h2>Dérivée du produit de deux fonctions</h2><br>
   <strong>Propriété</strong> : Soient $u$ et $v$ deux fonctions définies et dérivables sur un intervalle Ι. Alors la fonction produit $u\cdot v$ définie sur Ι par : $x\to u(x)\cdot v(x)$ est dérivable sur Ι et, pour tout réel $x$ de Ι, on a:<br>
-$(u\cdot v)'(x)=u'(x)\cdot v(x)+u(x)\cdot v'(x)$<br>
+$(u\cdot v)'(x)=$$u'(x)\cdot v(x)+$$u(x)\cdot v'(x)$<br>ou de manière simplifiée <strong>$(uv)'=u'v+uv'$</strong><br>
 <h2>Dérivée du quotient de deux fonctions</h2><br>
-<strong>Propriété : </strong>Soient
+<strong>Propriété : </strong>Soient $u$ et $v$ deux fonctions définies sur un intervalle Ι. On suppose que $v$ ne s'annule pas sur l'intervalle Ι.<br><ul>
+  <li>La fonction inverse $\frac{1}{v}$, définie sur Ι, par $x\to \frac{1}{v(x)}$, est dérivable sur Ι et pour tout réel $x$ de Ι, $(\frac{1}{v})'(x)=$ $-\frac{v(x)}{(v(x))^2}$</li>
+  <li>La fonction quotient $\frac{u}{v}$, définie sur Ι par $x\to \frac{u(x)}{v(x)}$, est dérivable sur Ι et pour tout réel $x$ de Ι, $(\frac{u}{v})'(x)$$=\frac{u'(x)\cdot v(x)-u(x)\cdot v'(x)}{(v(x))^2}$<br>Notons $(\frac{u}{v})'$=$\frac{u'v-uv'}{v^2}$</li>
+</ul>
+<h2>Dérivée de la composée avec une fonction affine</h2><br>
+<strong>Propriété</strong> : On considère un intervalle Ι et $a$ et $b$ deux réels. Soit $J$ l'intervalle formé des valeurs prises par <a style="color:red;font-size:100%;">$a$</a>$x+$<a style="color:green;font-size:100%;">$b$</a> lorsque $x$ décrit l'intervalle Ι. Si la fonction $g$ est dérivable sur $J$, alors la fonction ƒ définie sur Ι par : $f(x)=g($<a style="color:red;font-size:100%;">$a$</a>$x+$<a style="color:green;font-size:100%;">$b$</a>) est dérivable sur Ι et, pour tout réel $x$ de Ι, on a :<br>$f'(x)=$<a color='red'>$a$</a>$\cdot g'($<a style="color:red;font-size:100%;">$a$</a>$x+$<a style="color:green;font-size:100%;">$b$</a>$)$
+<br><h2>Variations et extremums</h2><br>
+<div class="info">
+  <li>La fonction ƒ est croissante sur $Ι$ si, et seulement si:<br>pour tout réel $x$ de $Ι$, $f'(x)\geq 0$</li>
+  <li>La fonction ƒ est décroissante sur $Ι$ si, et seulement si:<br>pour tout réel $x$ de $Ι$, $f'(x)\leqslant 0$</li>
+  <li>La fonction ƒ est constante sur $Ι$ si, et seulement si:<br>pour tout réel $x$ de $Ι$, $f'(x)=0$</li>
+</div>
+<div class="tips">
+  Pour étudier les variations d'une fonction sur un intervalle $I$, on se ramène souvent à l'étude du signe de sa fonction dérivée sur $I$.<br>
+Pour cela, on procède selon l'enchaînement d'étapes suivant.<br>
+<li>1 : Calcul de la fonction dérivée ƒ'</li>
+<li>2 : Étude du signe de ƒ'(x) sur $I$</li>
+<li>3 : Construction du tableau de variation de ƒ sur Ι.</li>
+<li>4 : Calcul des images aux bornes de $I$, ainsi qu'aux éventuelles valeurs où l'on observe un changement de sens de variation de la fonction ƒ.</li>
+</div>
+<strong>Définition</strong> : Le réel $M$ est le maximum de ƒ sur $I$ s'il existe un réel $a$ tel que $f(a)=M$ et, pour tout réel $x$ de $I$, $f(x)\leqslant M$.<br>
+On dit alors que <surlign>le maximum</surlign> $M$ de ƒ sur $I$ est atteint en $a$.
+<ul>
+  <li>Le réel $m$ est le minimum de ƒ sur $I$ s'il existe un réel $a$ tel que $f(a)=m$ et, pour tout réel $x$ de $I$, $f(x)\geqslant m$</li>
+On dit alors que <surlign>le minimum </surlign> $m$ de $f$ sur $I$ est atteint en $a$.<br>
+<li>On appelle <surlign>extremum</surlign> de ƒ sur $I$ le maximum ou le minimum de ƒ sur I.</li>
+<li>On dit que le réel α est un <surlign>extremum local</surlign> de ƒ sur l'intervalle ouvert $J\subset I$ tel que α soit un extremum local en $a$.</li>
+</ul>
+<strong>Propriété</strong> : Soit $a$ un réel de l'intervalle $I$ qui n'est pas une borne de $I$.<br>
+<li>Si ƒ admet un extremum local en $a$, alors $f'(a)=0$.</li>
+<li>Si la fonction dérivée $f'$ s'annule en $a$ en changeant de signe de part et d'autre de $a$, alors ƒ admet un extremum local en $a$.</li>
   <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 <script type="text/x-mathjax-config">
