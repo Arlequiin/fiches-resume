@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="icon" type="image/x-icon" href="fr-logo.ico">
+</head>
+<body>
+<div class="blurry" id="blurry">
+<div class="popup">
+  🔒<br></br>Cette page est inaccessible au public. Saisissez le mot de passe pour y accéder.
+  <center><input type="password" class="form__field" placeholder="Mot de passe" name="name" id='name' required /></center>
+<script>
+window.addEventListener('keydown', function (e) {
+  if (e.key=="Enter"){
+    let pw=document.getElementById("name").value
+    if (pw=="ionesco"){
+      document.getElementById("blurry").style.height='0';
+    }
+  }
+  
+})
+</script>
+</div>
+  </div>
+  <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="/index.html">Page de garde</a>
+    <a href="/maths.html">Maths</a>
+    <a href="/spc.html">Physique-Chimie</a>
+    <a href="/svt.html">E.S</a>
+    <a href="/nsi.html">N.S.I</a>
+    <a href="/fr.html">Français</a>
+    <a href="/bac.html">Calcul des notes</a>
+  </div>
+
+</div>
+<div id="evaluate" class="evaluate">
+<a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
+<br>
+<br>
+<center><zelda>TIME TO PAIN</zelda></center>
+<br>
+<a id="maintxt">Saisis le texte de la fiche (après l'avoir appris bien-entendu) pour t'évaluer.<br> Vise le score le plus haut!</a>
+<center><textarea placeholder="Les fautes font baisser des points!" id="textarea"></textarea></center>
+<script>
+  document.getElementById("textarea").style.width = "90%";
+  document.getElementById("textarea").style.height = "300px";
+</script>
+<button onclick="Compare_txt(gettext(),fiches.fr[0])" class="button-54">Vérifier</button>
+</div>
+<span onclick="openNav()" class="open">☰</span>
+  <h1>Un Certain Plume, Michaux (1923)</h1><br>
+  <div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
+<div class="tips">Fiche faite avec l'aide de Mme Bartal</div>
+<div class="diplomation">Oral test Jeudi 05/01/2022</div>
+<button class="button-54" onclick="openEv()">SE TESTER</button>
+<h2>Introduction</h2><br>
+<iframe src="Plume.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0" width="100%" height="500px">
+    </iframe>
+  <div class="info">
+    <details>
+      <summary>Resumé de l'œuvre</summary>
+    <div class="tips" style="font-size:100%;">
+      "Un Certain Plume" est un poème de Henri Michaux qui n'a qu'un seul acte. Le poème raconte l'histoire d'un plume qui essaie de trouver sa place dans le monde et de trouver un sens à sa vie.
+<br>
+Le plume décrit son voyage à travers diverses scènes et situations, rencontrant des personnages étranges et fascinants tout au long de son parcours. Il se déplace de place en place, explorant de nouveaux horizons et cherchant à comprendre sa place dans l'univers.
+<br>
+Finalement, le plume arrive à un moment de révélation où il comprend que sa véritable place est celle qu'il a choisie lui-même. Il accepte son destin et décide de vivre sa vie pleinement et de façon authentique, sans crainte ni regrets.
+<br>
+Le poème se termine sur une note positive et inspirante, encourageant le lecteur à suivre l'exemple du plume et à trouver sa propre voie dans la vie.
+    </div>
+    </details>
+  </div>
+<div class="tips">
+<details>
+  <summary>Auteur</summary>
+  <div class="info" style="font-size:100%;">
+  Henri Michaux était un écrivain et poète belge né en 1899. Il a passé son enfance en Belgique et en France, et a étudié la littérature et les arts plastiques avant de se consacrer à l'écriture.
+<br>
+Au cours de sa carrière, Michaux a publié de nombreux recueils de poèmes, de nouvelles et de romans, ainsi que des essais et des livres de voyage. Ses œuvres sont souvent associées à l'absurde et à l'onirisme, et il a été largement reconnu pour sa prose imaginative et expressive.
+<br>
+Michaux a également été un peintre talentueux, et ses œuvres ont été exposées dans de nombreuses galeries d'art en Europe et aux États-Unis. Il a également voyagé beaucoup et a vécu dans plusieurs pays différents au cours de sa vie.
+<br>
+Michaux est décédé en 1984, laissant derrière lui une œuvre littéraire et artistique importante et influente.
+</div>
+</details>
+</div>
+<strong>Amorce</strong> : "La dépression est un état passif. Elle nous prend notre énergie, notre motivation et notre désir de faire quoi que ce soit." - Anonyme
+<ul>
+  <li>Œuvre choisie : Un Certain Plume</li>
+  <li>Parcours : Boue et Or</li>
+  <li>Courant : Absurde, Stoïcisme</li>
+</ul>
+<h2>Prise de Parole</h2>
+J'ai choisi l'œuvre cursive "Un Certain Plume" de Henri Michaux, écrite en 1923 dans un contexte tendu sur tous les points à savoir politiquement et socialement. Il s'agit d'un recueil composé d'un acte unique et de 13 poèmes, tous écrits en prose. Il met en scène le personnage Plume, étant un <strong>anti-héro</strong>.<br>
+Le fait que le personnage s'appelle Plume peut être vu comme une allusion à sa légèreté et à sa fragilité, ainsi qu'à sa capacité à se déplacer librement et à voler.<br>
+En utilisant l'onomastique de cette manière, Michaux donne au personnage de Plume une dimension symbolique et métaphorique qui enrichit la signification du poème et lui confère une profondeur supplémentaire.<br>
+Plume est un personnage voyageant énormément, on le voit réagir face à ces étrangetés à l'image de Henri Michaux qui voyagea en Inde, en Chine, en Afrique, en Europe de l'est et j'en passe. Plume visitera des endroits visités par son auteur tels que le Maroc. Cela est pour l'auteur un moyen de s'exprimer, en effet il s'identifie à Plume, il est sa plume, il est ses écrits. 
+<h2>Questions</h2>
+<p style="text-decoration:underline;text-decoration-color:black;">Sample question ?</p><br>
+
+      
+     </p>
+  
+</body>
+  <br></br>
+  <center><footer> © 2022 - Mohamed Badr benchekroun</footer></center>
+</html>
