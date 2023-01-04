@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="icon" type="image/x-icon" href="fr-logo.ico">
+</head>
+<body>
+<div class="blurry" id="blurry">
+<div class="popup">
+  🔒<br></br>Cette page est inaccessible au public. Saisissez le mot de passe pour y accéder.
+  <center><input type="password" class="form__field" placeholder="Mot de passe" name="name" id='name' required /></center>
+<script>
+window.addEventListener('keydown', function (e) {
+  if (e.key=="Enter"){
+    let pw=document.getElementById("name").value
+    if (pw=="ionesco"){
+      document.getElementById("blurry").style.height='0';
+    }
+  }
+  
+})
+</script>
+</div>
+  </div>
+  <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="/index.html">Page de garde</a>
+    <a href="/maths.html">Maths</a>
+    <a href="/spc.html">Physique-Chimie</a>
+    <a href="/svt.html">E.S</a>
+    <a href="/nsi.html">N.S.I</a>
+    <a href="/fr.html">Français</a>
+    <a href="/bac.html">Calcul des notes</a>
+  </div>
+
+</div>
+<div id="evaluate" class="evaluate">
+<a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
+<br>
+<br>
+<center><zelda>TIME TO PAIN</zelda></center>
+<br>
+<a id="maintxt">Saisis le texte de la fiche (après l'avoir appris bien-entendu) pour t'évaluer.<br> Vise le score le plus haut!</a>
+<center><textarea placeholder="Les fautes font baisser des points!" id="textarea"></textarea></center>
+<script>
+  document.getElementById("textarea").style.width = "90%";
+  document.getElementById("textarea").style.height = "300px";
+</script>
+<button onclick="Compare_txt(gettext(),fiches.fr[0])" class="button-54">Vérifier</button>
+</div>
+<span onclick="openNav()" class="open">☰</span>
+  <h1>Le Malade Imaginaire (1673)</h1><br>
+  <a href="/fr/malade-imaginaire-texte-4.html" class="previous round" id="prev">&#8249; Précédent</a>
+<a href="/fr/fleurs-du-mal-6.html" class="next round" id="next">Suivant &#8250;</a><br>
+  <div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
+<div class="tips">Fiche faite avec l'aide de Mme Bartal</div>
+<div class="diplomation">Oeuvre du Parcours (05/20)</div>
+<button class="button-54" onclick="openEv()">SE TESTER</button>
+<h2>Introduction</h2><br>
+<iframe src="malade-imaginaire.pdf#page=62&toolbar=0&navpanes=0&scrollbar=0" width="100%" height="500px">
+    </iframe>
+  <div class="info">
+    <details>
+      <summary>Biographie Molière</summary>
+    <div class="tips" style="font-size:100%;">Molière est l'un des plus grands dramaturges français, si grand qu'il a même donné son nom à la périphrase de la langue française : <gras>La langue de Molière</gras>. Il a fait ses débuts à Paris sans succès, s'est ruiné et endetté, a même fait de la prison puis il est parti produire en province <annotation>(en dehors de Paris)</annotation>. Il devint vite célèbre et retourna à Paris, où il obtiendra la protection du roi et reprendra le métier de son père, tapissier du roi. Il y deviendra très proche du roi, même plus proche que certains nobles car il faisait sa chambre (pour être plus précis il supervisait ses valets qui faisait la chambre du roi) et son lit. Molière fera des pièces sur mesure pour <gras>Louis XIV</gras>, qui aimait beaucoup la danse, le ballet et la musique. Dans un certain nombre de pièces il fera l'éloge du roi. Ce dernier lui donnait la permission de répéter dans une salle, la salle du <gras>Petit Bourbon</gras> un jour sur deux tandis que d'autres répétait dans la rue. Il y rencontrera de nombreux membres de la <gras>Comédia Dell'Arte</gras> ce qui influencera sa façon d'écrire. Molière est réputé pour avoir redoré le comique longtemps rejeté face au théâtre tragique, jugé plus prestigieux, plus noble. Le comique était confondu avec la farce avant Molière, jusqu'à ce que ce dernier y ajoute une arrière-pensée critique. Il utilise la satire pour critiquer la société. Il rendu l'âme en composant l'œuvre étudiée, suite à un problème au poumon se mis à tousser sans-cesse, la composition pris fin et Molière rendu l'âme ce même jour.</div>
+    <body oncopy="return false" oncut="return false" onpaste="return false">
+    </details>
+    <details>
+    <summary>Commedia dell'arte</summary>
+      <div class="check" style="font-size:100%;">
+        La commedia dell'arte est une forme de théâtre populaire née dans les années 1550 en Italie et qui conquiert ensuite l'Europe. La première compagnie naît ainsi à Padoue <annotation>(Padova, ville en Italie proche de Venise)</annotation> et présente ce qu'on nomme à l'époque de la comédie à l'impromptu <em>(commedia all'improviso)</em>. Il s'agit de troupes itinérantes <annotation>(théâtre nomade, troupe se déplaçant, caravane)</annotation> composées de 6 à 12 acteurs professionnels. <em>La commedia dell'arte</em> se répand dans toute l'Europe : de nombreuses troupes traLigneeront le continent au cours du XVI et XVIIème siècle. Tiberio Fiorilli, acteur italien de la commedia dell'arte, créateur du personnage de Scaramouche, directeur de la troupe des Comédiens-Italiens de Paris est ainsi un grand ami de Molière avec la troupe duquel il partageait le Théâtre du Petit-Bourbon et le Théâtre du Palais-Royal. Molière l'admirait fort et s'inspirait de lui.<br>
+        En plein air ou sur des scènes de fortune, cette comédie se caractérise par dialogues improvisés mettant en scène des "types populaires". C'est donc un genre théâtral populaire caractérisé par l'absence de texte dramatique écrit et reposant sur le jeu des acteurs qui improvisent à partir d'un <gras>canevas</gras> de base et de personnages figés aux actions codifiés. Cette comédie d'intrigue a pour but de divertir notamment par la caricature et la satire sociale. Généralement courtes <gras>(3 actes)</gras>, les pièces intégrent chant, danse, acrobaties, jonglerie, mimes et les fameux <gras><em>lazzi</em></gras><annotation>( = jeux de scènes burlesques, bouffonneries)</annotation> pour provoquer le rire. La commedia dell'arte est donc une forme théâtrale qui privilégie le visuel, le mouvement. Elle mise sur l'expression corporelle de l'acteur, sur l'improvisation est les <em>lazzi</em>, qui s'apparentent à la pantomime <annotation>(exclusivement basée sur le jeu de mime)</annotation>. Les personnages sont issus de la basse ou de la moyenne société, ils sont masqués le plus souvent et ont un costume caractéristique. Un acteur joue le même personnage pendant toute sa carrière. Il y a les <em>zanni</em> <annotation>(valets/servantes)</annotation> : Arlequin, Polichinelle, Brighella, Pierro, Scaramouche (= Scapin ou Sganarelle chez Molière) ; les <em>vecchi</em> <annotation>(vieillards)</annotation> : Le Docteur, Pantalon ; les <em>innamorati</em> <annotation>(amants)</annotation> ; les soldats. Intrigue typique : les <em>innamorati</em> souhaitent se marier, mais un ou plusieurs vieillards font obstacle à ce mariage, menant les amants à demander de l'aide aux <em>zanni</em> ingénieux. Le dénouement est heureux et correspond souvent au mariage des <em>innamorati</em>.<br>Les points communs avec la comédie Molière sont nombreux : le dénouement heureux, les personnages typés (servantes rusées, valets roués <annotation>(=rusés)</annotation>, vieillards cupides <annotation>(= avares)</annotation> et capricieux/colériques, charlatands...), les <em>lazzi</em>, les arlequinades, les quiproquo..., les thèmes principaux (relation maître/valet, mariage refusé...)<br>On retrouve aujourd'hui plusieurs héritages de la <em>Commedia dell'arte</em> : on peut penser au cinéma muet (Charlie Chaplin, Buster Keaton...), aux clowns, aux maroinnettes (et notamment à Guignol et Polichinelle), à l'art du mime...
+      </div>
+    </details>
+  </div>
+  <div class="info">
+    <details>
+      <summary>Rédaction intro</summary>
+      <div class="tips" style="font-size:100%;">
+        "L'art de la médecine consiste à distraire le malade pendant que la nature le guérit" disait Voltaire. Cette citation est en lien avec l'œuvre étudiée, plus précisément l'escroquerie et l'inefficacité dont font preuve les médecins.<br>L'extrait étudié est la scène 5 de l'acte III du Malade Imaginaire. L'auteur de l'extrait est Molière, l'un des plus grands dramaturges du XVIIe siècle, siècle du classicisme et du baroque, auteur de nombreuses comédies, courant longtemps
+      </div>
+    </details>
+  </div>
+  <strong>Amorce</strong> : "L'art de la médecine consiste à distraire le malade pendant que la nature le guérit" — Voltaire<br>
+  <strong>Auteur</strong> : Molière est l'un des plus grands dramaturges français qui a redoré le comique longtemps rejeté pour le tragique jugé plus noble.<br> 
+<strong>Courant</strong> : Burlesque, Comique, Comédie Ballet<br>
+<strong style="text-decoration:underline;">Mouvements</strong> :<br>
+<ul>
+  <li><surlign>"Débat sur les compétences des médecins"</surlign> de la ligne 1 à 9</li>
+  <li><surlign>"Molière, diffamateur ou révélateur?"</surlign> de la ligne 10 à la fin.</li>
+</ul>
+<p style="text-decoration:underline;text-decoration-color:black;">En quoi ce débat pousse-t-il une réfléxion sur le rôle de la comédie dans la satire de la médecine ?</p><br>
+<h2>Débat sur les compétences des médecins</h2><br>
+Ce premier mouvement constitue un débat polémique sur la médecine entre deux frères. Un partisan, Argan (hypocondriaque), un opposant : Béralde (sceptique).<br>
+<li>Argument de Béralde : Les médecins créent une illusion d'être savants à l'oral de part la mystification de leurs propos mais ignorants lorsqu'il s'agit de pratique. On retrouve la critique du pédantisme qui revient souvent dans la comédie de Molière.</li>
+  <li>Béralde utilise le parallélisme pour opposer leur parole et leurs actions, leurs paroles en elles-même n'ont rien de savant car elles constituent un langage mystifié composé de latin de cuisine alambiqué, Béralde est convaincu de cela. L'expression "deux sortes de personnages" renforce l'idée de dualité voire duplicité médicale : derrière un beau langage de façade se cache la plus grande incompétence. De part l'emploi de la 2ème personne lorsqu'il indique "Voyez-les", il créé une certaine complicité avec le public voire même utilise la scène comme une tribune. L'antithèse résume parfaitement ce paradoxe "les plus habiles gens du monde" vs "les plus ignorants de tous les hommes". la structure de ce parallélisme ne diffère qu'en une chose à savoir le changement de verbe (faire/parler), "tous les hommes" étant synonyme de "gens du monde". Ces expressions hyperboliques généralisant à l'entièreté du monde cherchent à mieux frapper les esprits pour convaincre.</li>
+<li>De part l'utilisation du possessif "vos grands médecins", il renvoie sarcastiquement son frère à son obsession pour la médecine, l'adjectif "grand" est antiphrastique et il s'agit ici d'une réflexion portée sur la croyance, en effet Béralde emploie ce possessif comme s'il parlait de croyances qui sont propres à Argan de fait, il décrédibilise les médecins, les présente de telle sorte qu'ils soient dépendant de la croyance d'un homme, à l'image de la magie ou la sorcellerie, révélant d'ores et déjà leur aspect charlatan.</li>
+  <li>Ligne 4 : Argan commence sa phrase avec une interjection "Hoy" faussement admirative, il reprend l'adjectif antiphrastique utilisé par son frère "grand" ce dans le but de reprocher son arrogance. De part l'utilisation du conditionnel il exprime un souhait "je voudrais qu'il y eût ici quelqu'un de ces messieurs" en effet Argan aurait souhaité être épaulé par un médecin pour l'aider à mieux argumenter. Cela traduit son admiration pour les docteurs et le rôle de subalterne qu'il endosse, il estine ne pas être à la hauteur pour défendre ce domaine, valorisant ainsi d'avantage les médecins. De part l'utilisation du pronom indéfini "quelqu'un" il indique que n'importe quel médecin ferait l'affaire, preuve que le titre compte plus aux yeux d'Argan que les qualités personnelles.</li>
+<li>Ligne 4 : Complément de but "pour rembarrer vos raisonnements et rabaisser votre caquet" : encore un parallélisme de construction + allitération en "r" qui renforce le trait décoché : laissant ainsi entendre une sorte de rugissement de colère. De part l'emploi du terme "caquet", il animalise son frère, le faisant ainsi passer pour un gallinacé parlant sans réfléchir. Il lui fait implictement le même reproche que celui fait plus tôt envers les médecins, plus qu'un débat il s'agit à mon goût d'une dispute car l'objectif est de s'attaquer à la personne.</li>
+<li>Ligne 6 : Ayant reçu l'agressivité de son frère, Béralde fait machine arrière, en effet dans le but de radoucir le débat commencera par l'apostropher affectueusement "Mon frère" de façon à rappeler leur lien affectif et insistera sur le fait que son objectif n'est pas de "combattre la médecine", faisant de fait preuve d'hypocrisie. Il cache derrière l'argument relativiste de chacun croit ce qu'il veut, nous faisant revenir à l'idée de dépendance à la croyance donc à l'aspect charlatan des médecins, de part l'utilisation de la réplique "à ses risques et périls" Argan souligne le fait que leur faire confiance est synonyme de risquer sa vie, toujours dans cette démarche d'accalmie prétend n'avoir qu'une simple discussion entre frères, pouvant ainsi faire sourire le spectateur.</li>
+  <li>L'utilisation de la conjonction de coordination ; vise à créer une surprise voire une césure avec les propos précédents afin de faire une référence métatextuelle à Molière sur quoi portera la réorientation du débat.</li>
+
+     </p>
+  
+</body>
+  <br></br>
+  <center><footer> © 2022 - Mohamed Badr benchekroun </footer></center>
+</html>
