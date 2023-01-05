@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="icon" type="image/x-icon" href="fr-logo.ico">
+</head>
+<body>
+<div class="blurry" id="blurry">
+<div class="popup">
+  🔒<br></br>Cette page est inaccessible au public. Saisissez le mot de passe pour y accéder.
+  <center><input type="password" class="form__field" placeholder="Mot de passe" name="name" id='name' required /></center>
+<script>
+window.addEventListener('keydown', function (e) {
+  if (e.key=="Enter"){
+    let pw=document.getElementById("name").value
+    if (pw=="ionesco"){
+      document.getElementById("blurry").style.height='0';
+    }
+  }
+  
+})
+</script>
+</div>
+  </div>
+  <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="/index.html">Page de garde</a>
+    <a href="/maths.html">Maths</a>
+    <a href="/spc.html">Physique-Chimie</a>
+    <a href="/svt.html">E.S</a>
+    <a href="/nsi.html">N.S.I</a>
+    <a href="/fr.html">Français</a>
+    <a href="/bac.html">Calcul des notes</a>
+  </div>
+
+</div>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+<div id="evaluate" class="evaluate">
+<a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
+<br>
+<br>
+<center><zelda>TIME TO PAIN</zelda></center>
+<br>
+<a id="maintxt">Saisis le texte de la fiche (après l'avoir appris bien-entendu) pour t'évaluer.<br> Vise le score le plus haut!</a>
+<center><textarea placeholder="Les fautes font baisser des points!" id="textarea"></textarea></center>
+<script>
+  document.getElementById("textarea").style.width = "90%";
+  document.getElementById("textarea").style.height = "300px";
+</script>
+<button onclick="Compare_txt(gettext(),fiches.fr[0])" class="button-54">Vérifier</button>
+</div>
+<span onclick="openNav()" class="open">☰</span>
+  <h1>Les Fleurs du Mal, Baudelaire</h1><br>
+  <a href="fleurs-du-mal-1.html" class="previous round" id="prev">&#8249; Précédent</a>
+<a href="/fr/6.html" class="next round" id="next">Suivant &#8250;</a><br>
+  <div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
+<div class="tips">Fiche faite avec l'aide de Mme Bartal</div>
+<div class="diplomation">Pack rattaché à des oeuvres du parcours</div>
+<button class="button-54" onclick="openEv()">SE TESTER</button>
+<h2>Introduction</h2><br>
+<iframe src="Les Fleurs du Mal.pdf#page=121&toolbar=0&navpanes=0&scrollbar=0" width="100%" height="500px">
+    </iframe>
+<div class="info">
+  <details>
+    <summary>L'auteur, Charles Baudelaire</summary>
+  <div class="tips" style="font-size:100%;">Charles Baudelaire, né le 9 avril 1821 à Paris et mort dans la même ville le 31 août 1867, est un poète français.
+<br>Il est surtout connu pour son recueil <em>Les Fleurs du Mal</em> mais également pour avoir traduit les œuvres du romantiste américain Edgar Allan Poe, faisant de fait découvrir ses œuvres à la France, par extension à l'Europe. En 1828, il est révolté par le remariage de sa mère, il n'appréciait pas son beau-père. Il fut un enfant et adolescent difficile. <br>À ses 18 ans, Baudelaire mène une vie dissipée dans la bohème littéraire du quartier latin, pour l'arracher de cette vie, sa famille l'embarque sur un voilier en direction des Indes, il s'arrêtera 10 mois à l'île Bourbon, ce voyage l'aura profondément marqué et l'aura poussé à écrire un grand nombre de poèmes.<br>Baudelaire, à son retour, ayant atteint la majorité demandera sa part de l'héritage paternel. Il se met à dillapider son argent, alarmée par cela sa famille le fait placer sous tutelle. Un conseil judiciaire gèrera ses biens et lui remettra une pension mensuelle.<br>
+Baudelaire décrivait assez souvent des femmes, en effet il a eu trois passions amoureuses qui ont profondément influencé son œuvre, <gras>Jeanne Duval la mûlatresse</gras>, <gras>L'actrice Marie Daubrun</gras> enfin, <gras>Madame Sabatier</gras><br><gras>En 1857, Baudelaire publie les Fleurs du Mal</gras> mais il est attaqué en justice et est contraint de payer une amende et retirer des pièces de son recueil.<br>
+Charls Baudelaire mourra en 1867, à cause d'excès d'opium, qu'il prenait pour des raisons médicales. (Drogue pouvant devenir dangereuse bien qu'à usage médicale).
+  </div>
+    </details>
+</div>
+<p id="fiche">
+<strong>Amorce</strong> : "Les sabliers ne servent pas seulement à nous rappeler la fuite du temps, ils évoquent égalemet la poussière que nous deviendrons un jour." - Georg Christoph Litchenberg<br>
+<strong style="text-decoration:underline;">Mouvements</strong> :<br><ul>
+<li>Mouvement 1 : 1ère strophe <br><surlign>«L'inspiration du poète qui déambule dans les rues de Paris»</surlign></li>
+<li>Mouvement 2 : 2ème strophe <br><surlign>«Description des pouvoirs du Soleil»</surlign></li>
+<li>Mouvement 3 : De l'arrivée du garde à la dernière replique<br><surlign>«Mise en relation du Soleil et du Poète»</surlign> (le Soleil = métaphore du poète)</li>
+</ul>
+<p style="text-decoration:underline;text-decoration-color:black;">Problématique : En quoi Baudelaire définit-il une image solaire du poète?</p><br>
+<h2>L'inspiration du poète qui déambule dans les rues de Paris</h2><br>
+<ul>
+  <li>Vers 1 : Il fait référence à un quartier pauvre et délabré de la ville de Paris, où les maisons sont en mauvais état et où les vêtements sèchent sur des cordes tendues entre les bâtiments.
+<br>
+Le mot "faubourg" désigne un quartier situé à l'extérieur des remparts d'une ville, souvent peuplé de gens modestes. Le qualificatif "vieux" suggère que ce quartier a vu passer beaucoup de temps et qu'il est probablement désuet et délabré. Le verbe "pendent" indique que les vêtements sont accrochés de manière inesthétique et que le quartier manque d'entretien. Le mot "masures" désigne des maisons en mauvais état, souvent délabrées ou en ruine.
+<br>
+Au-delà de sa simple description, ce vers peut être lu comme une critique de la société et de la misère qui règnent dans certains quartiers de la ville. Il met en lumière la pauvreté et la détresse de ceux qui y vivent, mais aussi leur capacité à survivre dans des conditions difficiles.</li>
+<li>Le vers "Les persiennes, abri des secrètes luxures" fait référence à des persiennes (ou volets) qui sont utilisées pour protéger ou cacher des comportements ou des désirs considérés comme honteux ou indécents, appelés "secrètes luxures".
+<br>
+En utilisant le mot "persiennes", le poète peut faire allusion à l'intimité et à la discrétion qui sont garanties par ces éléments de fermeture. En employant l'expression "abri des secrètes luxures", il peut suggérer que les persiennes permettent de masquer ou de protéger des activités qui sont considérées comme immorales ou condamnables par la société.
+<br>
+Le vers "Les persiennes, abri des secrètes luxures" peut donc être lu comme une critique de la morale et des normes sociales qui régissent les comportements et les désirs des individus. Il peut également être interprété comme une réflexion sur l'hypocrisie et le double discours qui peuvent exister dans les relations humaines, entre ce qui est montré et ce qui est caché. Enfin, en utilisant le mot "luxures", le poète peut évoquer des thèmes tels que la sexualité, le plaisir, la jouissance, l'excès, etc.</li>
+<li>Vers 3 : Le vers "Quand le soleil cruel frappe à traits redoublés" décrit une situation où le Soleil, symbole de chaleur, de lumière et de vie, devient agressif et meurtrier. Le qualificatif "cruel" attribue au Soleil une dimension malveillante et inhumaine, tandis que le verbe "frappe" et le mot "traits" suggèrent une violence physique et directe. Le terme "redoublés" renforce cette idée de force et d'intensité, en indiquant que les coups portés par le Soleil sont multipliés et renforcés.
+<br>
+En utilisant de tels termes, le poète peut évoquer plusieurs thèmes tels que la nature, la force, la violence, la domination, etc. Il peut également mettre en lumière la relation complexe et ambivalente que nous entretenons avec les éléments de la nature, qui peuvent nous nourrir et nous protéger, mais aussi nous menacer et nous détruire. Enfin, en utilisant le Soleil comme métaphore, le poète peut également évoquer des réalités ou des situations différentes, afin de les interroger ou de les éclairer sous un nouveau jour.</li>
+<li>Vers 4 : Le vers "Sur la ville et les champs, sur les toits et les blés" décrit une situation où quelque chose ou quelqu'un étend son influence ou sa présence sur un espace étendu et diversifié. Le poète peut ainsi évoquer des thèmes tels que la puissance, la domination, la diversité, la relation humaine à l'espace, etc. en mettant en lumière les contrastes et complémentarités entre ces milieux ou en suggérant des liens ou influences entre eux.</li>
+</ul>
+</p>
+  
+</body>
+  <br></br>
+  <center><footer> © 2022 - Mohamed Badr benchekroun</footer></center>
+</html>
