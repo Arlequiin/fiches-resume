@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fiche résumés</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="icon" type="/image/x-icon" href="images/fr-logo.ico">
+  <meta property="og:title" content="Fiches Résumés - Arlequiin" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://fiches-resume.arlequiin.repl.co" />
+<meta property="og:image" content="http://my.site.com/images/thumb.png" />
+<meta property="og:description" content="Fiche résumé sur les probabilités" />
+<meta name="theme-color" content="#DEDDAB">
+<meta property="og:site_name" content="Mohamed Badr Benchekroun">
+</head>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+<body onload="loading()">
+<body>
+<div class="blurry" id="blurry">
+  </div>
+  <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <div class="overlay-content">
+    <a href="/index.html">Page de garde</a>
+    <a href="/maths.html">Maths</a>
+    <a href="/spc.html">Physique-Chimie</a>
+    <a href="/svt.html">E.S</a>
+    <a href="/nsi.html">N.S.I</a>
+    <a href="/fr.html">Français</a>
+    <a href="/bac.html">Calcul des notes</a>
+  </div>
+
+</div>
+<div id="evaluate" class="evaluate">
+<a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
+<br>
+<script>
+  document.addEventListener('keydown', evt => {
+    if (evt.key === 'F' || evt.key == 'f') {
+        toggleFullScreen();
+    }
+});
+</script>
+<br>
+<center><zelda>TIME TO PAIN</zelda></center>
+<br>
+<a id="maintxt">Saisis le texte de la fiche (après l'avoir appris bien-entendu) pour t'évaluer.<br> Vise le score le plus haut!<br>IMPORTANT : Ne pouvant pas écrire les divisions telles qu'elles, vous devrez écrire avec la <a href="nsi.html">syntaxe python</a> du site, largement inspirée de la syntaxe de langages de programmation</a>
+<center><textarea placeholder="Les fautes font baisser des points!" id="textarea"></textarea></center>
+<script>
+  document.getElementById("textarea").style.width = "90%";
+  document.getElementById("textarea").style.height = "300px";
+</script>
+<button onclick="Compare_txt(gettext(),fiches.maths[0])" class="button-54">Vérifier</button>
+</div>
+<span onclick="openNav()" class="open">☰</span><h1>Physique-Chimie - Énergie électrique</h1><br>
+<a href="fonctions-polynome-du-second-degré-3.html" class="previous round" id="prev">&#8249; Précédent</a>
+<a href="/maths/fonctions-polynome-du-second-degré-2.html" class="next round" id="next">Suivant &#8250;</a><br>
+<div class="settings">
+<div>
+<a75 id="darkmode">Noir et Blanc :</a75>
+<label class="switch">
+  <input type="checkbox" id="mycheckbox" onchange="toggleCheck()">
+  <span class="slider"></span>
+</label>
+</div>
+<div>
+<a75>Couleur du texte :</a75>
+<input type="color" value="#ff0000" id="colorWell">
+</div>
+</div>
+<span onclick="print()"><h2>Imprimer cette page</h2></span><br>
+<div class="info">Page de garde la section SPC</div>
+<div class="check">S'éxercer régulièrement est la clé de la réussite</div>
+<br>
+<h2>Intensité d'un courant continu</h2><br>
+<div class="tips"><gras>L'échelle macroscopique</gras> désigne la gamme des dimensions ou des quantités qui sont visibles à l'œil nu ou qui peuvent être mesurées avec des instruments de mesure courants, comme des règles, des balances ou des thermomètres. Elle est généralement utilisée pour décrire des objets ou des phénomènes qui sont relativement grands ou qui se produisent à une échelle supérieure à celle des atomes et des molécules.</div>
+<div class="info">L'intensité d'un courant continu (CC) est une mesure de la quantité de charges électriques qui circulent dans un circuit électrique par unité de temps. Elle est généralement exprimée en ampères (A) et est définie comme le rapport entre la quantité de charge qui traverse une section du circuit par unité de temps et l'intervalle de temps considéré.</div><br>
+Voici la formule qui permet de calculer l'intensité d'un courant continu :<br>
+$$I=Q/T$$
+<ul>
+  <li>I est l'intensité du courant en ampères (A)</li>
+  <li>Q est la quantité de charge en coulombs (C)</li>
+  <li>t est l'intervalle de temps en secondes (s)</li>
+</ul>
+<div class="check">L'intensité d'un courant continu peut être mesurée à l'aide d'un appareil appelé "ampèremètre", qui est branché en série dans le circuit électrique. L'ampèremètre mesure le courant qui traverse le circuit et affiche sa valeur en ampères sur un cadran ou un écran digital.</div>
+<br><h2>Questions-Réponses</h2>
+<div class="check">
+<details>
+  <summary>Quelle est la différence entre la tension est l'intensité?</summary>
+  <div class="info" style="font-size:100%;">
+    La tension est une force qui pousse les charges électriques dans un circuit. Elle est mesurée en volts (V). L'intensité est la quantité de courant électrique qui circule dans un circuit. Elle est mesurée en ampères (A). Selon la loi d'Ohm, la tension est proportionnelle à l'intensité et à la résistance d'un circuit : V = I * R. La tension et l'intensité sont deux grandeurs distinctes qui jouent des rôles différents dans un circuit électrique.
+  </div>
+</details>
+<details>
+  <summary>Qu'est-ce qu'une DEL</summary>
+  <div class="info" style="font-size:100%;">
+Une diode électro-luminescente (DEL) est un composant électronique qui produit de la lumière lorsqu'il est alimenté en courant électrique. Elle est composée d'un matériau semi-conducteur qui émet de la lumière lorsqu'il est excité par un courant électrique.
+<br>
+Les diodes électro-luminescentes sont souvent utilisées comme source de lumière dans de nombreux appareils électroniques, comme les ordinateurs, les téléphones portables, les téléviseurs et les panneaux d'affichage. Elles sont également utilisées dans de nombreuses applications de signalisation et de décoration, comme les guirlandes de Noël et les affiches publicitaires.
+<br>
+Les diodes électro-luminescentes ont de nombreux avantages par rapport aux autres sources de lumière, comme les ampoules à incandescence ou les lampes fluorescentes. Elles sont plus efficaces énergétiquement, elles ne produisent pas de chaleur excessive et elles ont une durée de vie plus longue.
+<br>
+Il existe plusieurs types de diodes électro-luminescentes, qui diffèrent par la couleur de la lumière qu'elles produisent et par leur champ d'application. Par exemple, il existe des diodes électro-luminescentes rouges, jaunes, vertes, bleues
+  </div>
+</details>
+<details>
+  <summary>Comment fonctionne une DEL?</summary>
+  <div class="info" style="font-size:100%;">
+1. Lorsqu'une DEL est alimentée en courant électrique, les électrons qui circulent dans le matériau semi-conducteur sont excités et passent à un niveau d'énergie supérieur.
+<br>
+2. Lorsque les électrons retournent à leur niveau d'énergie normal, ils émettent de la lumière. Cette lumière est visible à l'œil humain et peut être de différentes couleurs en fonction du matériau semi-conducteur utilisé dans la DEL.
+<br>
+3. Le courant électrique qui alimente la DEL doit être polarisé, c'est-à-dire que le sens de circulation du courant doit être précisé. La polarisation de la DEL est indiquée par les bornes du composant, qui sont généralement marquées "anode" et "cathode".
+<br>
+4. Pour fonctionner correctement, une DEL doit être branchée dans le sens de la polarité indiqué par les bornes. Si la DEL est branchée à l'envers, elle ne fonctionnera pas ou elle pourra être endommagée.
+  </div>
+</details>
+<details>
+  <summary>Qu'est-ce qu'une armature en électricité?</summary>
+  <div class="info" style="font-size:100%;">
+En électricité, une armature peut être un conducteur électrique qui est utilisé pour transmettre du courant électrique à un moteur ou à un générateur. Elle peut également être un élément d'un interrupteur ou d'un relais qui est actionné par un champ magnétique.
+  </div>
+</details>
+<details>
+  <summary>Qu'est-ce que Q?</summary>
+  <div class="info" style="font-size:100%;">
+Q est une notation utilisée pour désigner la quantité de charge électrique d'un objet ou d'un système électrique. La charge électrique est une propriété fondamentale de la matière qui décrit la façon dont les atomes et les molécules sont organisés au niveau de leurs électrons.
+<br>
+La quantité de charge électrique d'un objet ou d'un système est généralement exprimée en coulombs (C), qui est l'unité de mesure de la charge électrique dans le système international (SI). Un coulomb est égal à la charge électrique transportée par un courant de 6,24 x 10^18 électrons par seconde.
+<br>
+La quantité de charge électrique d'un objet ou d'un système peut être positive, négative ou nulle. Un objet ou un système qui a une charge électrique positive a un surplus d'électrons et est appelé "chargé positivement". Un objet ou un système qui a une charge électrique négative a un manque d'électrons et est appelé "chargé négativement". Un objet ou un système qui a une charge électrique nulle n'a pas de surplus ni de manque d'électrons et est appelé "chargé neutre".
+<br>
+La quantité de charge électrique d'un objet ou d'un système est une grandeur importante en électricité et en physique. Elle intervient dans de nombreux phénomènes et lois électriques, comme la loi d'Ohm, la loi de Coulomb ou la loi de Gauss.
+  </div>
+</details>
+</div>
+  <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { 
+      preferredFont: "TeX", 
+      availableFonts: ["STIX","TeX"], 
+      styles: {".MathJax": {color: "#CCCCCC"}} 
+      }
+});
+</script>
+</body>
+  <br></br>
+  <center><footer> © 2022 - Mohamed-Badr Benchekroun (known as Arlequiin). Check my <a href="https://github.com/Arlequiin/" style="font-size:150$;">Github!</a>  </footer></center>
+</html>
