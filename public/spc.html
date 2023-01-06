@@ -5,9 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Fiche résumés</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="script.js"></script>
-  <link rel="icon" type="image/x-icon" href="images/fr-logo.ico">
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="icon" type="/image/x-icon" href="images/fr-logo.ico">
+  <meta property="og:title" content="Fiches Résumés - Arlequiin" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://fiches-resume.arlequiin.repl.co" />
+<meta property="og:image" content="http://my.site.com/images/thumb.png" />
+<meta property="og:description" content="Fiche résumé sur les probabilités" />
+<meta name="theme-color" content="#DEDDAB">
+<meta property="og:site_name" content="Mohamed Badr Benchekroun">
 </head>
 <body oncopy="return false" oncut="return false" onpaste="return false">
 <body onload="loading()">
@@ -19,21 +26,27 @@
   <!-- Button to close the overlay navigation -->
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-  <!-- Overlay content -->
   <div class="overlay-content">
-    <a href="index.html">Page de garde</a>
-    <a href="maths.html">Maths</a>
-    <a href="spc.html">Physique-Chimie</a>
-    <a href="svt.html">S.V.T</a>
-    <a href="nsi.html">N.S.I</a>
-    <a href="fr.html">Français</a>
-    <a href="bac.html">Calcul des notes</a>
+    <a href="/index.html">Page de garde</a>
+    <a href="/maths.html">Maths</a>
+    <a href="/spc.html">Physique-Chimie</a>
+    <a href="/svt.html">E.S</a>
+    <a href="/nsi.html">N.S.I</a>
+    <a href="/fr.html">Français</a>
+    <a href="/bac.html">Calcul des notes</a>
   </div>
 
 </div>
 <div id="evaluate" class="evaluate">
 <a href="javascript:void(0)" class="closebtn" onclick="closeEv()">&times;</a>
 <br>
+<script>
+  document.addEventListener('keydown', evt => {
+    if (evt.key === 'F' || evt.key == 'f') {
+        toggleFullScreen();
+    }
+});
+</script>
 <br>
 <center><zelda>TIME TO PAIN</zelda></center>
 <br>
@@ -45,10 +58,9 @@
 </script>
 <button onclick="Compare_txt(gettext(),fiches.maths[0])" class="button-54">Vérifier</button>
 </div>
-<span onclick="openNav()" class="open">☰</span>
-<h1>Physique-Chimie</h1><br>
-<a href="#"  class="previous round" id="prev">&#8249; Précédent</a>
-<a href="spc/interactions-1.html" class="next round" id="next">Suivant &#8250;</a><br>
+<span onclick="openNav()" class="open">☰</span><h1>Physique-Chimie</h1><br>
+<a href="fonctions-polynome-du-second-degré-3.html" class="previous round" id="prev">&#8249; Précédent</a>
+<a href="/maths/fonctions-polynome-du-second-degré-2.html" class="next round" id="next">Suivant &#8250;</a><br>
 <div class="settings">
 <div>
 <a75 id="darkmode">Noir et Blanc :</a75>
@@ -63,26 +75,40 @@
 </div>
 </div>
 <span onclick="print()"><h2>Imprimer cette page</h2></span><br>
-<div class="info">C'est la page de garde de la section S.P.C, elle contient des rappels élémentaires pour passer à la suite<gras><a href="spc/sommaire.html">ici</a></gras><br></div>
-<div class="tips"><gras>Astuce</gras> : Imprimez-les et collez-les dans un endroit que vous voyez souvent.</div>
-<span onclick="openEv()"><h2>Particules élémentaires</h2><annotation>(Cliquer sur ce titre pour vous tester)</annotation></span><br>
-<h2>Sommaire</h2>
-<ul>
-  <li><a href="interactions.html">Interactions</a></li>
-</ul>
-Les <strong>protons</strong> sont notés p.<br>
-Les <strong>neutrons</strong> sont notés n.<br>
-Ces deux particules forment le noyau, d'où l'appélation suivante pour les désigner : <surlign>nucléons</surlign>.<br>
-Les <strong>électrons</strong> sont noté e.<br>
-$$m_p \approx m_n = 1.67\cdot10^{-27}\text{ kg}\\m_e = 9.1\cdot10^{-31}\text{ kg}$$
-<h2>Charges</h2>
-$$q_n = 0\\q_p = -q_e = e\\e = 1.60\cdot10^{-19}C$$
-<div class="tips">La charge élémentaire est indivisible (e)</div>
-La formation des noyaux prend des milliards d'année et se fait dans les étoiles ; cette formation a pour nom  <strong>nucléosynthèse</strong>, elle est <surlign>stellaire</surlign><petit> (se fait dans les étoiles)</petit>
-<div class="info"><gras>$$\text{Comparer }m_{nucl}\text{ et }m_{e} $$</gras>1. Calculer un rapport$$\\\frac{\text{Plus grand}}{\text{Plus petit}} = \frac{m_{nucl}}{m_{e}}\approx1835$$2. Écrire une conclusion.<br>Un nucléon est 1835 fois plus lourd qu'un électron</div>
+<div class="info">Page de garde la section SPC</div>
+<div class="check">S'éxercer régulièrement est la clé de la réussite</div>
+<br>
+<h2>Sommaire</h2><br>
+
+<h2>Tool-Pack</h2>
+<div class="check">
+<details>
+  <summary>Quelle est la différence entre la tension est l'intensité?</summary>
+  <div class="info" style="font-size:100%;">
+    La tension est une force qui pousse les charges électriques dans un circuit. Elle est mesurée en volts (V). L'intensité est la quantité de courant électrique qui circule dans un circuit. Elle est mesurée en ampères (A). Selon la loi d'Ohm, la tension est proportionnelle à l'intensité et à la résistance d'un circuit : V = I * R. La tension et l'intensité sont deux grandeurs distinctes qui jouent des rôles différents dans un circuit électrique.
+  </div>
+</details>
+</div>
   <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { 
+      preferredFont: "TeX", 
+      availableFonts: ["STIX","TeX"], 
+      styles: {".MathJax": {color: "#CCCCCC"}} 
+      }
+});
 </script>
 </body>
   <br></br>
-  <center><footer> © 2022 - Mohamed Badr Benchekroun (known as αρλ).</footer></center>
+  <center><footer> © 2022 - Mohamed-Badr Benchekroun (known as Arlequiin). Check my <a href="https://github.com/Arlequiin/" style="font-size:150$;">Github!</a>  </footer></center>
 </html>
